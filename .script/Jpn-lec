@@ -1,0 +1,8 @@
+#!/bin/sh
+notify-send "started"
+no="$1"
+[ "$no" = "$1" ] || no="$(echo "" | dmenu -p "no of lession")"
+play_url="https://www.youtube.com/playlist?list=PLOcym2c7xnBwU12Flkm5RcLIEhvURQ8TB"
+vidId="$(yt-dlp -j --flat-playlist "$play_url" | jq -r '.id' | sed -n "${no}"p)"
+vid_url="https://www.youtube.com/watch?v="${vidId}""
+mpv --ytdl-raw-options=format-sort=+res:479 "$vid_url"

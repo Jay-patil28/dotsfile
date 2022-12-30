@@ -1,0 +1,43 @@
+#!/bin/sh
+
+opt=$(echo "blender\nlist\nnew\nresent\ncurrent build\nexperimental build\novernight" | dmenu -i)
+Ani_file="$HOME/blender"
+newblend=0
+
+#Type=$(echo "Animation\nModeling\nDraw\nVideo" | dmenu -i -p 'what?'	) || exit
+Type() { Type=$(ls "$Ani_file" | grep _Sample | sed 's/[_].*$//g' | sort -u | dmenu -i -p 'what?') || exit 
+}
+
+listed_file() { listed_file=$( find "$Ani_file" -maxdepth 1 | grep -Po "[home].*"$Type"[^\.]+(?=\.blend)" | dmenu -i -r -l 10) || exit 
+#old file sorting::-- find "$Ani_file" -maxdepth 1| grep -i "$Type" | sed -n '/end$/p' | sed 's/.blend$//g' 
+}
+case "${opt:-$1}" in
+	"blender") "$BLENDER" ;;
+	"list")
+		Type 
+		listed_file
+		# ["$Type" != "All" ] &&\
+		#["$Type" == "All" ] &&  listed_file=$( find "$Ani_file"/*blend | sed -n '/Animatio/p;/Modeling/p;/Draw/p;/Video/p' | sed 's/.blend$//g' | dmenu -i -r -l 10) || exit 
+		blend_name=${listed_file##*/}
+		"$BLENDER" "$listed_file".blend
+		;;
+	"new")
+		Type
+		notify-send "$( ls "$Ani_file"/*"$Type"* | sed -n '/end$/p'  )" | tail
+		NoTe=$(echo "" | dmenu -p "Note for file:-") \
+	 	New_file_no=$(echo '' | dmenu -p 'no of file:')  || exit
+		cp -v "$HOME"/blender/"$Type"_Sample.blend "$Ani_file"/"$Type"_"$New_file_no"-"$NoTe".blend | xargs --null notify-send \
+			|| notify-send -u critical failed 
+		;;
+	"resent")"$BLENDER" /tmp/quit.blend ;;
+	"overnight") 
+		Type 
+		listed_file
+		sudo tlp start
+ slock &
+		"$BLENDER" "$listed_file".blend -b -a |grep -i 'saved' && tgsend "$listed_file done" || tgsend "filed" && [ "$2" -eq "B" ] && sudo poweroff 
+		;;
+	"experimental build") $BLENDEREXP ;;
+	"current build")"$BLENDER" "$CURRENT_BLEND" ;;
+	"*") notify-send n,l,r,e ; n,space ;;
+esac

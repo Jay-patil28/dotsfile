@@ -1,0 +1,5 @@
+#!/bin/sh
+
+randomS=$(ls /home/jay/.local/share/sounds/ | shuf -n 1)
+echo "$randomS"
+paplay --volume=25000 /home/jay/.local/share/sounds/"${randomS%%.ogg*}".ogg  

@@ -1,0 +1,11 @@
+for channel in $(sed -n '7-$p' ./yt)
+do
+id=$(curl -s "https://www.youtube.com/@""$channel"  | grep -Po "(?<=channelId\":\")[^\"]+(?=\",\"title\":\")")
+echo "https://www.youtube.com/feeds/videos.xml?channel_id=""$id"
+done
+
+GangstaPerspectives
+GangstaPhilosopher
+bugswriter_
+AntwanShiro
+Aru1

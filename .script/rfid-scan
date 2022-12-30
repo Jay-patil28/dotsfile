@@ -1,0 +1,18 @@
+#!/bin/sh
+rfid_id=$(xinput | grep -i "USB Reader" |  cut -f 2 | tr -dc "0-9")
+# rfid_dev_id=$(xinput | grep -i "USB Reader" |  cut -f 3 | tr -dc "0-9")
+rfid_dev_id="3"
+rfid_file="/dev/input/by-id/usb-USB_Reader_USB_Reader_SN201706VER1-event-kbd"
+enable(){
+sleep 0.5
+xinput enable "$rfid_id"> /dev/null
+} 
+xinput disable "$rfid_id"
+while  [ -e "$rfid_file"  ]
+do
+ hexdump "$rfid_file" -n 32 > /dev/null ||  sudo -A chown :users  "$rfid_file"
+ enable &
+rfid=$(echo "" | dmenu -p 'scan id' ) 
+xinput disable "$rfid_id"
+~/.script/rfid/"$rfid" &
+ done

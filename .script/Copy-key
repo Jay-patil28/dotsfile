@@ -1,0 +1,13 @@
+#!/bin/sh
+
+opt=${1}
+[ $opt ] || opt=$(echo "add\ncopy\npeast\nsel-type\n" | dmenu)
+case $opt in
+	"add") echo "$(xclip -o -selection clipboard)" >> /tmp/tmpclip && notify-send -t 100 "l" ;;
+	"copy") cat "/tmp/tmpclip" | dmenu -i -l 10 | tr -d '\n' | xclip -sel c && notify-send -t 100 "l" ;;
+	"peast") line=$(cat "/tmp/tmpclip" | dmenu -i -l 10 | tr -d '\n')
+	  xdotool type "$line"	;;
+  "sel-type") xdotool type $(xclip -o) ;;
+	*) notify-send "dmenu" ;;
+esac
+

@@ -1,0 +1,87 @@
+#!/bin/sh
+case $1 in 
+	link) opt=link && input=$2 ;;
+	list) opt=list && input=$2 ;;
+	share) opt=share && input=$2 ;;
+	*) opt=$( printf "link\\nlist\\nshare\\nprint\\nlist-vim\\nimage" | dmenu -i ) && input=$1 || exit ;;
+esac
+
+# Start up 
+tmpdir=$(mktemp -d -p /tmp httpshare.XXXXX )
+link_list="$tmpdir/dlhttp.list"
+curlfile="$tmpdir/curlfilehttp.html"
+imagedir="$tmpdir/img"
+imagetype="[jpg]*[jpge]*[png]*"
+sxiv_otps=" -tfpo -z 200" 
+rm -rvf "$tmpdir"
+mkdir "$tmpdir" "$imagedir"
+
+# function
+clean_up () {
+  	rm -rvf "$tmpdir"
+notify-send "exiting..."
+exit 
+}
+
+case $opt in 
+	link) 
+		url=$(curl "$input" )
+		file=$(echo "$url" | pup 'a attr{href}' | dmenu -l 10 -p 'witch file') || exit
+# url=$(curl "$input" | grep 'files' | sed  's/\<span\>\S/\n/g' | sed 's/^<.*hr//' |  grep 'ef="\S' | sed 's/\"><.*>/|/' | dmenu -i -l 10 -p 'which file?') || exit
+# file=$( echo "$url" | cut -d \| -f 1 | cut -c 5- ) || exit
+dldir=$(find "$HOME" -maxdepth 2  | dmenu -i -p 'to where' ) 
+[ -n "$dldir" ] || dldir="$DLDIR"
+aria2c --continue=true -d "$dldir" "$input""$file" && notify-send "kool" || notify-send "nokool"
+;;
+	list) 
+		url=$(curl "$input") && i=0
+		 while [ $i -le 1 ] 
+   	do
+		file=$(echo "$url" | pup 'a attr{href}' | dmenu -l 10 -p 'witch file') || break
+echo "$input""$file" >> "$link_list"
+done
+dldir=$(find "$HOME" -maxdepth 2  | dmenu -i -p 'to where' )
+[ -n "$dldir" ] || dldir=$(echo "$(pwd)\n$DLDIR"| dmenu -i )
+[ -n "$dldir" ] || dldir="$DLDIR"
+
+aria2c --continue=true -d "$dldir" -i "$link_list" && notify-send "kool" || notify-send "nokool" 
+		;;
+	list-vim)
+			curl "$input" | pup 'a attr{href}' | sed "s|^|$input|g" > "$link_list"
+			st -e vim ""$link_list"" || exit
+dldir=$(find "$HOME" -maxdepth 2  | dmenu -i -p 'to where' ) 
+[ -n "$dldir" ] || dldir=$(echo "$(pwd)\n$DLDIR"| dmenu -i )
+[ -n "$dldir" ] || dldir="$DLDIR"
+aria2c --continue=true -d "$dldir" -i "$link_list" && notify-send "kool" || notify-send "nokool" 
+;;
+	share) 
+		ip -br -4 addr  | tr -s "\ " | cut -d " " -f 3
+		[ -z $input ] && notify-send empty && input="$HOME/mount/wireless/"
+		python -m http.server --directory "$input" 
+		if [ $? = 0 ] 
+		then
+			notify-send "stoped" 
+		else	
+			kill $(ps -eo pid,cmd | grep "python -m" | sed '/grep/d' | tr -dc '[0-9]') && notify-send "toggled off"
+		fi
+		;;
+	print)
+
+		url=$(curl "$input")
+		file=$( echo "$url" | pup 'a attr{href}' | dmenu -l 10) || exit
+		echo $file
+		;;
+	image)
+			curl "$input" | pup 'a attr{href}' | grep -i -P "$imagetype" | sed "s|^|$input|g" > "$link_list"
+			aria2c -d "imagedir" -i "$link_list" &&
+			  	sxiv "$sxiv_opts" "$imagedir/*"
+#dldir=$(find "$HOME" -maxdepth 2  | dmenu -i -p 'to where' ) 
+#[ -n "$dldir" ] || dldir=$(echo "$(pwd)\n$DLDIR"| dmenu -i )
+#[ -n "$dldir" ] || dldir="$DLDIR"
+#aria2c --continue=true -d "$dldir" -i "$link_list" && notify-send "kool" || notify-send "nokool" 
+#
+		;;
+	*) notify-send "list\\nlink\\nshare" ;;
+esac
+
+clean_up

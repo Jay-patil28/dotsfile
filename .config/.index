@@ -1,0 +1,25 @@
+
+vcbs ;$HOME/.bashrc
+vcxi ;$HOME/.xinitrc
+vzp ;$HOME/.zprofile
+vc ;$HOME/.config/
+vlb ;$HOME/.local/bin/
+vs ;$HOME/.script/
+vchk ;$HOME/.config/sxhkd/sxhkdrc
+vl ;$HOME/lol/personal_wiki/Notes.wiki
+vcsx ;$HOME/.config/sxiv/exec/key-handler
+vczs ;$HOME/.config/zsh/.zshrc
+vcv ;$HOME/.vimrc
+vca ;$HOME/.config/aliasrc
+vc ;$HOME/.config/mpd/mpd.conf
+vc ;$HOME/.config/ncmpcpp/config
+viki ;$HOME/lol/personal_wiki/index.wiki
+* ;$HOME/.config/openbox/rc.xml
+* ;$HOME/.config/openbox/autostart
+* ;$HOME/.config/polybar/config.ini
+* ;$HOME/xmenu/xmenu.sh
+* ;$HOME/.local/bin/xmenu-e
+
+## music
+vmpk - keybord
+lmms

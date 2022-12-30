@@ -1,0 +1,88 @@
+# tmp aliaces
+
+# clean-up
+alias abook=abook --config "$XDG_CONFIG_HOME"/abook/abookrc --datafile "$XDG_DATA_HOME"/abook/addressbook
+alias gdb=gdb -n -x $XDG_CONFIG_HOME/gdb/init
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+#custom alias
+alias c='clear'
+alias h='cat ~/.cache/zsh/history | sort | uniq | fzf | tr -d \\n | xclip -sel c'
+alias v='vim'
+alias z='zathura'
+alias zZ='setsid zathura'
+alias lf='lfub'
+alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ksend='kdeconnect-cli -d a63f2c08ac8b2dcd --share '
+alias walR='wal -i $BGDIR -o "setwal"'
+alias cpy='xclip -sel c'
+alias Untristing_songs="mpv --prefetch-playlist=yes --ytdl-raw-options=format-sort=+res:479 --vid=no --shuffle 'https://youtube.com/playlist?list=PLvO7gmdDNrp88SgwYSBpUYE77z75XaD4P'"
+alias downloadurl='echo "aria2c --file-allocation=none -c -x 10 -s 10"'
+alias blender="$BLENDERAPPDIR/blender"
+alias sonic="/home/jay/git/sonic-pi/app/build/gui/qt/sonic-pi"
+alias stat-s="stat -c %s"
+alias IP='ip -br -4 addr  | tr -s "\ " | dmenu -l 10 -p "which address" | cut -d " " -f 3'
+
+
+#function
+function Jpn_Lesson {
+notify-send "started"
+read no 
+play_url="https://www.youtube.com/playlist?list=PLOcym2c7xnBwU12Flkm5RcLIEhvURQ8TB"
+vidId=$(yt-dlp -j --flat-playlist "$play_url" | jq -r '.id' | sed -n ${no}p)
+url="https://www.youtube.com/watch?v=${vidId}"
+mpv --ytdl-raw-options=format-sort=+res:479 "$url"
+}
+
+
+#files to edit
+alias viki='vim $PERVIKIDIR/index.wiki' 
+alias To-do='v $PERVIKIDIR/To-Do.wiki'
+alias vin='v $HOME/.index'
+alias vcbs='v $HOME/.bashrc'
+alias vcxi='v $XINITRC'
+alias vzp='v $HOME/.zprofile'
+alias vc='v $HOME/.config/'
+alias vlb='v $HOME/.local/bin/'
+alias vchk='v $HOME/.config/sxhkd/sxhkdrc'
+alias vl='v $HOME/lol/personal_wiki/Notes.wiki'
+alias vcsx='v $HOME/.config/sxiv/exec/key-handler '
+alias vczs='v $HOME/.config/zsh/.zshrc'
+alias vcv='v $HOME/.vimrc'
+alias vca='v $HOME/.config/aliasrc'
+#alias vc='v $HOME/.config/mpd/mpd.conf'
+#alias vc='v $HOME/.config/ncmpcpp/config'
+
+
+#cd-dir-files
+alias pb='cd $BGDIR'
+alias cs='cd  $HOME/.script/'
+alias cA='cd $HOME/.local/src/AUR/'
+alias cg='cd $HOME/.local/src/git/'
+
+
+#dir/files
+alias cSY='cd $SYBBIDIR'
+alias cSYn='cd $SYBBIDIR/Note/'
+alias cSYr='cd $SYBBIDIR/Resources'
+alias cSYa='cd $SYBBIDIR/Assignment'
+alias cSYe='cd $SYBBIDIR/Event_extra'
+alias cSYN='cd $SYBBIDIR/notice'
+

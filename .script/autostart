@@ -1,0 +1,12 @@
+#!/bin/sh
+xmenu &
+xrandr --output eDP --gamma 0.8:0.8:0.8 &
+compton -I 1 -D 3 -m 0.9 -G &
+wal -R ;
+sxhkd -m 1 &
+
+#change caps lock
+xmodmap -e 'clear lock'
+xmodmap -e 'keycode 66 = Escape'
+
+#i=1 ; while [ $i -gt 0 ] ; do  xsetroot -name "$(upower -i `upower -e | grep 'BAT'` | grep percentage | cut -c 26-30)"; sleep 1m ; ((i++)) ; done &

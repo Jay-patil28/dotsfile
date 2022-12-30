@@ -1,0 +1,13 @@
+#!/bin/sh
+		ok=254
+		time=0.1s
+		value=1
+while [ $ok -gt 0 ] && [ $ok -lt 255 ]
+do 
+xrandr --output eDP --gamma 0.1:0.1:"$value" && sleep $time
+xrandr --output eDP --gamma 0.1:"$value":0.1 && sleep $time
+xrandr --output eDP --gamma "$value":0.1:0.1 && sleep $time
+# xrandr --output eDP --gamma 1:1:1 && sleep $time
+#redshift -O 4000.1K -m randr
+done 
+

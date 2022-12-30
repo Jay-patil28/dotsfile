@@ -1,0 +1,15 @@
+#!/bin/sh
+
+lol=$(mpc current) 
+
+lolp=$(mpc current)
+while [ 1 -gt 0 ]
+do 
+if [ "$lol" =  "$lolp" ]
+then
+lolp=$(mpc current)
+else
+	loginctl poweroff
+fi
+
+done

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#Bugy:- wal -i "$1" && xwallpaper --daemon --maximize "$1" || exit
+
+colors_list="$HOME/.cache/wal/colors.sh"
+
+[ -f "$colors_list" ] && chmod +x  --verbose "$colors_list" && . "$colors_list" && echo "$wallpaper"
+
+xwallpaper --"$(cat $HOME/.config/xwallpaper)" "$wallpaper" && cp "$wallpaper" "$HOME/.config/wall"  || exit
+
+## Dunst
+
+sed "s/#285577/$foreground/g;s/#fffff0/$background/g;s/#ffffff/$cursor/g" "$XDG_CONFIG_HOME/dunst/dunstrc.def" > "$XDG_CONFIG_HOME/dunst/dunstrc" 
+pidof dunst && killall dunst
+dunst &
+#set color
+ratbagctl warbling-mara led 0 set color "${color1#\#}" mode off
+
+

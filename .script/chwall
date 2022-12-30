@@ -1,0 +1,11 @@
+#!/bin/sh
+x=0
+while [ "$x" -le 3 ] 
+do
+type=$(echo "maximize\nfocus\ntile\ncenter\nzoom\nstretch\nsleep\nexit" | dmenu -i -p 'HOW?') || exit
+[ "$type" = exit ] && exit
+[ "$type" = sleep ] && sleep 3s && continue
+echo "$type" > ~/.config/xwallpaper 
+xwallpaper --daemon --"$type" "$(grep wallpaper "$HOME"/.cache/wal/colors-wal.vim | awk '{print$4 }' | tr -d "\"")" || notify-send error of '$?' :- "$?"
+[ "$1" = 2 ]  && x=4 
+done

@@ -1,0 +1,24 @@
+#!/bin/sh
+sudo -A echo lol
+		ok=254
+		time=0.01s
+while [ $ok -gt 0 ] && [ $ok -lt 255 ]
+do 
+[ $1 = "lsd" ] &&  xrandr --output eDP --gamma 1:1:1 && sleep $time
+	brightnessctl -d "radeon_bl0" set "$ok" | grep rrdaw || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness 
+ok=$((ok-1))
+[ $1 = "lsd" ] && xrandr --output eDP --gamma 1:1:2 && sleep $time
+	brightnessctl -d "radeon_bl0" set "$ok" | grep rrdaw || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness 
+ok=$((ok-1))
+[ $1 = "lsd" ] && xrandr --output eDP --gamma 1:2:1 && sleep $time
+	brightnessctl -d "radeon_bl0" set "$ok" | grep rrdaw || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness 
+ok=$((ok-1))
+[ $1 = "lsd" ] && xrandr --output eDP --gamma 2:1:1 && sleep $time
+	brightnessctl -d "radeon_bl0" set "$ok" | grep rrdaw || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness 
+ok=$((ok-1))
+[ $1 = "lsd" ] && redshift -O 4000K -m randr
+	brightnessctl -d "radeon_bl0" set "$ok" | grep rrdaw || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness 
+ok=$((ok-1))
+done 
+
+sudo rc-shutdown +0

@@ -1,0 +1,45 @@
+#!/bin/sh
+notify-send "exicuted : from box card"
+ log_file="$HOME/Work/log"
+ pid_file="/tmp/routine_log_script"
+ time="$(date +%X)"
+config_file=""
+
+date_time(){
+date +%r--%F
+ }
+
+ clean_up(){
+	 notify-send "cleaning up..."
+	 rm $pid_file
+ }
+
+
+ notify-send "$(date_time)"
+if  [ -e "$pid_file" ] 
+then
+	notify-send "alredy running... $(cat $pid_file)" 
+	kill -TRAP $(cat "$pid_file") || clean_up
+	exit
+else 
+	echo "$$" > "$pid_file"
+fi
+
+echo "--+--" >> "$log_file"
+date_time >> "$log_file"
+if pause_time="$(echo "45s\n30s\n30m\n5m\n20m\n1h\n10s"| dmenu -p "reminder of..:")"
+	then
+		echo lol
+	else 
+		 notify-send "no time given" 
+		 exit
+fi
+
+trap 'notify-send "time you got lezy"' TRAP 
+sleep "$pause_time"
+ratbagctl warbling-mara led 0 set mode cycle  brightness 255 duration 200
+echo "" | dmenu -p 'log -:' >> "$log_file"
+ratbagctl warbling-mara led 0 set mode off
+date_time >> "$log_file"
+echo "----" >> "$log_file"
+	 rm "$pid_file"

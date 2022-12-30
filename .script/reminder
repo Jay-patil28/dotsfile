@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+time=$(echo "" | dmenu -p "min->") || exit
+no=$(echo "" | dmenu -p "no")  || no=1
+sleep "$time"m && notify-send -u critical lol-s 
+for (( i=0; i<="$no"; i++ )); do notify-send -u critical lol"$i" ;done
+slock

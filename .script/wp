@@ -1,0 +1,6 @@
+#!/bin/sh
+
+[ -z "$BGDIR" ] && wal="/home/jay/pic/bg/" || wal="$BGDIR" 
+[ "$1" = f ] && wal="/home/jay/pic/bg/pywal-fav/"
+echo "$wal"
+find "$wal" -type f | shuf | sxiv -

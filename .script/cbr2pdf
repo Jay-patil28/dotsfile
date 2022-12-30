@@ -1,0 +1,13 @@
+#!/bin/bash
+#set -xev
+ORIGINAL_FOLDER=`pwd` 
+JPEGS=`mktemp -p /tmp -d CBR.XXXXXX`
+NAME="$(echo "" | dmenu)"
+echo $JPEGS
+#cp "$ORIGINAL_FOLDER/{}cbr" "$JPEGS" -v
+find . -maxdepth 1 -iname "*cbr" | xargs -L1 -I {} cp -v {} "$JPEGS"
+cd "$JPEGS" || return
+find . -maxdepth 1 -iname "*cbr"  |xargs -L1 -I {} 7z e {}
+find . -maxdepth 1 -iname "*jpg" | xargs -L1 -I {} img2pdf {} -o {}.pdf
+pdftk ./*.pdf cat output combined.pdf
+cp "$JPEGS/combined.pdf" "$ORIGINAL_FOLDER/$NAME-combined.pdf"

@@ -1,0 +1,41 @@
+#!/bin/sh
+
+bluetoothctl power on 
+bluetoothctl default-agent 
+
+opt=${1:-$(printf "tui\nconnect\nreconnect\ndisconnect\nturn off\npair\npair-t\n" | dmenu -p "what")} || exit
+
+case "$opt" in 
+connect) 
+device=$(bluetoothctl paired-devices | dmenu -l 10 -p "which device:-"| cut -d " " -f 2| cut -d " " -f 2) || exit
+pactl list | grep "$device" && notify-send "currently connected " || notify-send "currently not connected "
+bluetoothctl connect "$device" 
+;;
+reconnect) 
+device=$(bluetoothctl paired-devices | dmenu -l 10 -p "which device:-"| cut -d " " -f 2) || exit
+pactl list | grep "$device" || notify-send " not connected " | exit
+bluetoothctl disconnect "$device" 
+sleep 3
+bluetoothctl connect "$device"  | xargs --null notify-send
+;;
+disconnect) 
+device=$(bluetoothctl paired-devices | dmenu -l 10 -p "which device:-"| cut -d " " -f 2) || exit
+ echo "disconnect $device"  | bluetoothctl | xargs -n  -I{} notify-send "{}"
+;;
+pair)
+echo "scan on" | bluetoothctl  | sed 's/^/\"/g;s/$/\"/g' | xargs -n 1 notify-send &
+bluetoothctl pairable on
+st -e bluetoothctl &
+
+	;;
+#pair-t) 
+#pkill -RTMIN+8 dwmblocks
+#	;;
+tui) 
+st -e bluetoothctl &
+st -e "$AUDIOMNG";;
+"turn off") 
+	bluetoothctl power off && notify-send "Bl off"
+;;
+*) type dmenu || notify-send " install dmenu " && exit ;;
+esac

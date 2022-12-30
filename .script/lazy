@@ -1,0 +1,17 @@
+#!/bin/sh
+#This is ever changing thing for my lezy ness following are some fuction to make it eazy
+#name() { echo $1; }
+#name "lol"
+#for opeint terminal in certain dir
+stcd() { cd "$1" ; st ;}
+stcmd() { st -e $1 ; }
+#for opeing & writeing cert ain  fiel
+vcd() { st -e v "$1" ; }
+#for lfcd in certain file
+cdlf() { st -e lfcd "$1" ;}
+#for firefox
+fire() { firefox --search "$(echo "" | dmenu )";}
+
+stcmd calcurse &
+vcd "~/Learnig/SYBBI-Sem_IV/Assingment/EM/plan/steps.md" &
+

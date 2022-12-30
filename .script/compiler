@@ -1,0 +1,38 @@
+#!/bin/sh
+#!compiler %<CR>
+
+while getopts f:m: flag
+do
+	case $flag in
+	m) opt=${OPTARG} ;;
+	f) inputfile=${OPTARG} ;;
+	o) outputfile=${OPTARG} ;;
+esac
+filetype=${inputfile##*.}
+filename="${inputfile%.*}"
+filedir=${inputfile%/*}/
+done
+case $opt in
+s)
+notify-send "setting-up..."
+case $filetype in
+	"md") pandoc "$inputfile" -t beamer --slide-level=2 -o "$filename.pdf" & ;;
+	"ms") zathura "$filename.pdf" & ;;
+	"c" ) gcc -lcrypt -lcs50 -lm $inputfile -o "$filename".out && ./"$filename".out ;;
+	"h") cd "$filedir"  && sudo make install ;;
+	"tex") pdflatex "$filename" ;;
+	"py") python "$inputfile" | xargs -l -I{} notify-send "{}" ;;
+	*) printf "Error : For now accepts file with following extention\\n .ms \\n (doesn't include .)\\n\\n The Ext of this file is :- $filetype " ;;
+esac;;
+c)
+notify-send "compileing"
+case $filetype in
+	"md") pandoc "$inputfile" -t beamer --slide-level=2 -o "$filename.pdf" & ;;
+	"ms")  groff -pdfmark -U -e -t -p -ms "$inputfile" -T pdf > "$filename.pdf" ;;
+	"c" ) gcc -lcrypt -lcs50 -lm $inputfile -o "$filename".out && ./"$filename".out ;;
+	"h") cd "$filedir"  && sudo make install ;;
+	"tex") pdflatex "$filename" ;;
+	"py") python "$inputfile" ;;
+	*) printf "Error : For now accepts file with following extention\\n .ms \\n (doesn't include .)\\n\\n The Ext of this file is :- $filetype " ;;
+esac;;
+esac

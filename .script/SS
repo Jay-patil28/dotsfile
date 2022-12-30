@@ -1,0 +1,21 @@
+#!/bin/sh
+
+date=$(date "+%F(%a)%H:%M:%S")
+#dateF=$(date "+%F(%a)")
+SSF="$SSDIR/"
+opt="$1"
+[ "$opt" ] || opt=$(echo "SS\nSs\nC\nCs\nZ" | dmenu -i )
+#creat new file for new day
+[ -e "$SSF" ] || notify-send "NO-FIIIIIIIIIILE!!!!!!!!!!"
+[ -e "$SSF" ] || mkdir -v "$SSF" | xargs --null notify-send  || exit
+
+case "$opt" in
+"SS") maim | tee "$SSF/""$date.jpg" | xclip -selection clipboard -t image/png &&  notify-send -t 600 "ok" || notify-send -t 600 u critical "not-ok" ;;
+"Ss") maim -s | tee "$SSF""/$date"'.jpg' | xclip -selection clipboard -t image/png && notify-send "ok" || notify-send -t 600 u critical "not-ok" ;;
+"C") maim | xclip -selection clipboard -t image/png && notify-send "ok" || notify-send -t 600 u critical "not-ok" ;;
+"Cs") maim -s | xclip -selection clipboard -t image/png && notify-send "ok" || notify-send -t 600 u critical "not-ok" ;;
+"Z") maim | tee "/tmp/tmp.jpg" && sxiv "/tmp/tmp.jpg" ;;
+"h") notify-send "SS= whole screen copy w/ file; Ss= selection copy w/ file; \\n C = copy,Cs= copy-selection" ;;
+*) printf "SS= whole screen copy w/ file; Ss= selection copy w/ file; \n C = copy,Cs= copy-selection" ;;
+esac
+

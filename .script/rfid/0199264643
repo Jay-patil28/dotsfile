@@ -1,0 +1,35 @@
+#!/bin/sh
+#This is ever changing thing for my lezy ness following are some fuction to make it eazy
+
+#start up
+notify-send "exicuted: clg id"
+notify-send "hello Jay"
+
+#variables
+mpc_playing=$(mpc status | sed -n 2p | cut -f 1 -d ' ' | tr -d \[\])
+def_review_file="$SYBBI_IV_DIR/review/Sample_sheet.md"
+review_file="$SYBBI_IV_DIR/review/$(date +%a--%F).md"
+echo "$SYBBI_IV_DIR"
+#command
+
+xdotool key super+2 
+st -e calcurse &
+xdotool sleep 1s key super+4
+[ "$(ps -nv | grep 'ncmpcpp' | sed '/grep/d')" ] || st -e ncmpcpp &
+if [ "$mpc_playing" = paused ] 
+then
+	[ $(shuf -i 1-2 -n 1) = 1 ] && playlist="Anime-now" || playlist='Anime-replay'
+mpc clear
+mpc add "$playlist"
+mpc shuffle
+mpc random on
+mpc play 1
+else 
+	notify-send "$mpc_playing"
+fi
+xdotool sleep 2 key super+1
+st -e lf "$SYBBI_IV_DIR" &
+xdotool sleep 2 key super+1
+cp -v "$def_review_file" "$review_file" | xargs -I{} notify-send "{}"
+st -e v "$review_file"
+

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/jay/.script/imp-test'
+let g:netrw_dirhist_6='/home/jay/tmp'
+let g:netrw_dirhist_5='/etc/runit'
+let g:netrw_dirhist_4='/home/jay/.local/src/git/dwmblocks'
+let g:netrw_dirhist_3='/home/jay/.script/rfid'
+let g:netrw_dirhist_2='/home/jay/tmp'
+let g:netrw_dirhist_1='/home/jay'
+let g:netrw_dirhist_0='/home/jay/Work/Writing/RAS'
+let g:netrw_dirhist_9='/home/jay/blender/blender-3.3.1-linux-x64'
+let g:netrw_dirhist_8='/home/jay/.script'

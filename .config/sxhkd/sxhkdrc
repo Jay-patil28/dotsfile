@@ -1,0 +1,112 @@
+# hotkeys
+
+super + b ; {n,l,r,e,b,Return} ; {n,b,B}
+ blender-Multikey {n,l,r,e,c,blender} {note,_,B}
+
+super + b ; super + b
+ blender-Multikey
+
+super + b ; {t,L} ; b
+ { kill -15 $(pidof blender) , $BLENDER --open-last } || notify-send "failed"
+
+super + c 
+ Copy-key 
+
+super + d
+ dmenu_run
+
+super + E
+ $TERMINAL -e newsboat
+
+super + e
+ $TERMINAL -e calcurse
+
+super + m
+ "$TERMINAL" -e ncmpcpp
+
+super + n
+ "$TERMINAL" -e $EDITOR "$PERVIKIDIR"/index.wiki
+
+super + alt + o
+ $TERMINAL -e lf
+
+super + p
+ run_appimage
+
+super + r
+ reminder
+
+super + w 
+	 firefox
+
+super + W ; {s,y,u,b,w,r}
+	 brave {"https://open.spotify.com/","https://www.youtube.com/feed/history","https://www.youtube.com/playlist?list=PLvO7gmdDNrp88SgwYSBpUYE77z75XaD4P","","https://web.whatsapp.com/",""}
+
+super + Return 
+ $TERMINAL
+
+
+super + bar
+ { xrandr --output eDP --gamma 1:1:2,xrandr --output eDP --gamma 1:2:1,,xrandr --output eDP --gamma 2:1:1,xrandr --output eDP --gamma 1:1:1,redshift -O 4000K -m randr}
+
+super + backslash
+  xcalib -invert -alter
+
+super + x
+ dmenushutdown
+
+super + X ; {S,r,l,s} 
+ {loginctl poweroff,loginctl reboot,} 
+
+super + s ; s
+ SS 
+
+super + s ; {l,m,h,r}
+ brightness {l,m,h,r} || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness &
+
+super + alt + {Down,Up,Left,Right}
+ xrandr --orientation {normal,inverted,left,right} ; setwal
+
+super +  S ; {s,S} 
+ {_,slock &}  mpc pause ; xset dpms force off
+
+super +  S ; {o,O } 
+ overnight {_,O}
+
+super + {_,alt +} N
+ {st -e nmtui,wificonnect start}
+
+## Media Keys
+
+{_,shift + }XF86MonBrightness{Down,Up}
+	xbacklight {-dec 10,-dec 20,-inc 10,-inc 20,} || sudo -A chmod 666 /sys/class/backlight/radeon_bl0/brightness &
+
+XF86Audio{Lower,Raise}Volume
+ pactl set-sink-volume $(pactl get-default-sink) {-,+}10% ; pkill -RTMIN+3 dwmblocks
+
+{_,shift + } XF86AudioMute 
+ {pulsemixer --toggle-mute,dmenumute }
+
+{XF86AudioPause,XF86AudioPlay}
+ mpc toggle && pkill -RTMIN+6 dwmblocks
+
+XF86Audio{Next,Prev}
+ mpc {next,prev} && pkill -RTMIN+6 dwmblocks
+
+{XF86Search,Menu}
+  dmenu_run
+
+#
+
+super + KP_Down
+ bl
+#functionkeys F[1-11] F1
+
+super + F1
+  if rfid=$(echo "" | dmenu);  then ; pkill "$rfid" || ~/.script/rfid/"$rfid" ; fi
+super + F4
+ $TERMINAL -e pulsemixer
+
+super + F11
+ mpv --untimed --no-cache --no-osc --profile=low-latency --screenshot-directory=$HOME/pic/screenshot/mpv --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)
+

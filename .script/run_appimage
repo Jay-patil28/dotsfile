@@ -1,0 +1,8 @@
+#!/bin/sh
+
+
+name=$(find /home/jay/.appimages/ | dmenu -i -l 10 )
+
+
+"$name" || notify-send -u critical -t 900 "$name" \ "non-launched"
+

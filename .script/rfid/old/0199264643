@@ -1,0 +1,28 @@
+#!/bin/sh
+#This is ever changing thing for my lezy ness following are some fuction to make it eazy
+
+notify-send "exicuted: clg id"
+notify-send "hello Jay"
+
+#xdotool key super+2 
+#st -e calcurse &
+#xdotool sleep 1s key super+4
+#[ "$(ps -nv | grep 'ncmpcpp' | sed '/grep/d')" ] || st -e ncmpcpp &
+#mpc_playing=$(mpc status | sed -n 2p | cut -f 1 -d ' ' | tr -d \[\])
+#if [ "$mpc_playing" = paused ] 
+#then
+#	[ $(shuf -i 1-2 -n 1) = 1 ] && playlist="Anime-now" || playlist='Anime-replay'
+#mpc clear
+#mpc add "$playlist"
+#mpc shuffle
+#mpc random on
+#mpc play 1
+#else 
+#	notify-send "$mpc_playing"
+#fi
+#xdotool sleep 2 key super+6
+#bl troubleshoot 
+#xdotool sleep 2 key super+2
+#st -e lfcd
+#xdotool sleep 2 key super+3
+#firefox --search $(echo "" | dmenu -p "Search:") &
