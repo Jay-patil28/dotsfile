@@ -11,15 +11,83 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mount
+~MSle0/\.
 
 # Last Substitute Search Pattern:
-~MSle0&.$
+~MSle0~&:$
 
 # Last Substitute String:
-$
+$: chp-4
 
 # Command Line History (newest to oldest):
+:'<,'>s/:$/: chp-4/g
+|2,0,1672770508,,"'<,'>s/:$/: chp-4/g"
+:'<,'>s/:$/: chp-3/g
+|2,0,1672770193,,"'<,'>s/:$/: chp-3/g"
+:'<,'>
+|2,0,1672770064,,"'<,'>"
+:'<,'>s/:$/: chp-2/g
+|2,0,1672769938,,"'<,'>s/:$/: chp-2/g"
+:'<,'>s/:$/: chp-1/g
+|2,0,1672769775,,"'<,'>s/:$/: chp-1/g"
+:%s/\./. :/g
+|2,0,1672769116,,"%s/\\./. :/g"
+:s/\./. :/g
+|2,0,1672769109,,"s/\\./. :/g"
+:'<,'>s/\./.\\n/
+|2,0,1672769057,,"'<,'>s/\\./.\\\\n/"
+:'<,'>s/\./.\n/
+|2,0,1672769036,,"'<,'>s/\\./.\\n/"
+:'<,'>s/./.\n
+|2,0,1672769029,,"'<,'>s/./.\\n"
+:e $
+|2,0,1672587620,,"e $"
+:e $HOME/.config/watch-show/config
+|2,0,1672587306,,"e $HOME/.config/watch-show/config"
+:e watch-show
+|2,0,1672587303,,"e watch-show"
+:e  ~/.config/watch-show/config
+|2,0,1672571130,,"e  ~/.config/watch-show/config"
+:e  "$HOME/.config/watch-show/config"
+|2,0,1672571121,,"e  \"$HOME/.config/watch-show/config\""
+:e ./watch-show
+|2,0,1672570957,,"e ./watch-show"
+:e ./Hobbys/Hugo/Dairy/content/2023-01-01-Sun-02:21.md
+|2,0,1672519901,,"e ./Hobbys/Hugo/Dairy/content/2023-01-01-Sun-02:21.md"
+:jour
+|2,0,1672518899,,"jour"
+:journal
+|2,0,1672519171,,"journal"
+:var DATE=ll
+|2,0,1672519127,,"var DATE=ll"
+:set DATE=lol
+|2,0,1672519112,,"set DATE=lol"
+:DAte=lol
+|2,0,1672519104,,"DAte=lol"
+:e ~/hugo/Direy/config.toml
+|2,0,1672516276,,"e ~/hugo/Direy/config.toml"
+:e ~/hugo/Direy/static/style.css
+|2,0,1672514084,,"e ~/hugo/Direy/static/style.css"
+:e 
+|2,0,1672514047,,"e "
+:e ./config.toml
+|2,0,1672511713,,"e ./config.toml"
+:e ../theme.toml
+|2,0,1672510236,,"e ../theme.toml"
+:e ~/hugo/Direy/content/2022-20.md
+|2,0,1672510162,,"e ~/hugo/Direy/content/2022-20.md"
+:e ../../simp-direy/layouts/_default/single.html
+|2,0,1672507355,,"e ../../simp-direy/layouts/_default/single.html"
+:e ../../simp-direy/layouts/_default/list.html
+|2,0,1672507197,,"e ../../simp-direy/layouts/_default/list.html"
+:e ~/hugo/quickstart/themes/ananke/layouts/index.html
+|2,0,1672507165,,"e ~/hugo/quickstart/themes/ananke/layouts/index.html"
+:e ../../../config.toml
+|2,0,1672505725,,"e ../../../config.toml"
+: e ../study/content/DT/Business_gain.md
+|2,0,1672491128,," e ../study/content/DT/Business_gain.md"
+:w
+|2,0,1672424649,,"w"
 :%s/.$/. /g
 |2,0,1672340355,,"%s/.$/. /g"
 :r!pwd
@@ -170,8 +238,28 @@ $
 |2,0,1669570239,,"EX"
 
 # Search String History (newest to oldest):
+? :$
+|2,1,1672770508,,":$"
+? \.
+|2,1,1672769116,,"\\."
+?/-nb
+|2,1,1672739420,47,"-nb"
+?/alphas
+|2,1,1672738999,47,"alphas"
+?/alpha
+|2,1,1672738993,47,"alpha"
+?/alph
+|2,1,1672738937,47,"alph"
+?/col
+|2,1,1672738251,47,"col"
 ? @$
-|2,1,1672410266,,"@$"
+|2,1,1672730165,,"@$"
+?/pdft
+|2,1,1672639573,47,"pdft"
+?/mic
+|2,1,1672518873,47,"mic"
+?/hugo
+|2,1,1672490800,47,"hugo"
 ?/mount
 |2,1,1672409245,47,"mount"
 ?/USB
@@ -344,56 +432,41 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
-	
-|3,1,0,1,1,0,1672410266,""
+"0	LINE	0
+	20. What are the various types of investments : chp-5
+|3,0,0,1,1,0,1672770593,"20. What are the various types of investments : chp-5"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1672383191,""
+	23. What are the various types of investments : chp-5
+|3,0,1,1,1,0,1672770704,"23. What are the various types of investments : chp-5"
 "2	LINE	0
-	Lesson:
-	Point:
-	---
-|3,0,2,1,3,0,1672341194,"Lesson:","Point:","---"
-"3	BLOCK	6
-	Subject
-	Subject
-	Subject
-	Subject
-	Subject
-	Subject
-	Subject
-|3,0,3,2,7,6,1672341144,"Subject","Subject","Subject","Subject","Subject","Subject","Subject"
-"4	BLOCK	41
-	Role of Government to Provide Public Goods
-	Fiscal Policy
-	Instruments of Fiscal Policy-Taxation
-	Public Expenditure
-	Public Debt
-	Union Budget
-	International Trade
-	Theories of International Trade
-	Terms of Trade and Gains from Trade
-	Foreign Investment
-	Free Trade vs. Protection
-	Balance of Payments
-	Foreign Exchange Market
-|3,0,4,2,13,41,1672341038,"Role of Government to Provide Public Goods","Fiscal Policy","Instruments of Fiscal Policy-Taxation","Public Expenditure","Public Debt","Union Budget","International Trade","Theories of International Trade","Terms of Trade and Gains from Trade","Foreign Investment","Free Trade vs. Protection","Balance of Payments","Foreign Exchange Market"
-"5	LINE	0
-	
-|3,0,5,1,1,0,1672341031,""
-"6	LINE	0
-	24.
-|3,0,6,1,1,0,1672341031,"24."
+	22. SH - Marginal Propensity to consume (MEC) : chp-5
+|3,0,2,1,1,0,1672770701,"22. SH - Marginal Propensity to consume (MEC) : chp-5"
+"3	BLOCK	3
+	SN -
+	SN -
+	SN -
+|3,0,3,2,3,3,1672770384,"SN -","SN -","SN -"
+"4	LINE	0
+	20. SN - :
+|3,0,4,1,1,0,1672770376,"20. SN - :"
+"5	BLOCK	12
+	short note on
+	short note on
+|3,0,5,2,2,12,1672770364,"short note on","short note on"
+"6	BLOCK	0
+	7
+	7
+	7
+|3,0,6,2,3,0,1672770326,"7","7","7"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1672341030,""
+	$TERMINAL -e calcurse &
+|3,0,7,1,1,0,1672764957,"$TERMINAL -e calcurse &"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1672341024,""
+	$TERMINAL -e calcurse &
+|3,0,8,1,1,0,1672764955,"$TERMINAL -e calcurse &"
 "9	LINE	0
-	23.
-|3,0,9,1,1,0,1672341020,"23."
+	/* -l option; if nonzero, dmenu uses vertical list with given number of lines */ static unsigned int lines      = 0;
+|3,0,9,1,1,0,1672739574,"/* -l option; if nonzero, dmenu uses vertical list with given number of lines */ static unsigned int lines      = 0;"
 "c	CHAR	0
 	yss*yss/
 |3,0,12,0,1,0,1654236500,"yss*yss/"
@@ -446,9 +519,9 @@ $
 "z	CHAR	0
 	zaQQQZ€ýaQQQZQZqZZ:!rcho€kb€kb€kb€kbecho $PDWDtou:€ýaZZhjuWW€kbQQ
 |3,0,35,0,1,0,1655548397,"zaQQQZ€ýaQQQZQZqZZ:!rcho€kb€kb€kb€kbecho $PDWDtou:€ýaZZhjuWW€kbQQ"
-"-	CHAR	0
-	/
-|3,0,36,0,1,0,1672382818,"/"
+""-	CHAR	0
+	-o
+|3,1,36,0,1,0,1672827514,"-o"
 
 # File marks:
 'A  200  2  ~/.local/src/git/Dwm/config.h
@@ -471,232 +544,536 @@ $
 |4,87,22,12,1659977432,"~/Learnig/SYBBI/Event_extra/Bank_day_certificate/certificate-name/certifiate.tex"
 'Z  1  2  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
 |4,90,1,2,1672339545,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
-'0  8  0  ~/.script/imp-test
-|4,48,8,0,1672410269,"~/.script/imp-test"
-'1  118  2  ~/Learnig/wiki/Notes.wiki
-|4,49,118,2,1672409395,"~/Learnig/wiki/Notes.wiki"
-'2  1  0  ~/Learnig/wiki/index.wiki
-|4,50,1,0,1672389863,"~/Learnig/wiki/index.wiki"
-'3  1  0  ~/Learnig/wiki/index.wiki
-|4,51,1,0,1672389863,"~/Learnig/wiki/index.wiki"
-'4  16  0  ~/.config/gtk-3.0/settings.ini
-|4,52,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
-'5  1  8  ~/conf-tmp
-|4,53,1,8,1672382819,"~/conf-tmp"
-'6  1  11  ~/.script/linkhandler
-|4,54,1,11,1672342923,"~/.script/linkhandler"
-'7  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,55,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
-'8  4  7  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,56,4,7,1672341405,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
-'9  4  7  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,57,4,7,1672341405,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
+'0  13  7  ~/.xinitrc
+|4,48,13,7,1672827520,"~/.xinitrc"
+'1  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,49,1,0,1672770859,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+'2  5  31  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,50,5,31,1672770791,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+'3  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,51,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+'4  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,52,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+'5  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,53,6,0,1672768962,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+'6  5  0  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,54,5,0,1672768962,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+'7  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Financial_Managementâ€“II-lesson.lst
+|4,55,1,0,1672768824,"~/Learnig/SYBBI-Sem_IV/refrence/Financial_Managementâ€“II-lesson.lst"
+'8  40  18  ~/.xinitrc
+|4,56,40,18,1672764975,"~/.xinitrc"
+'9  40  18  ~/.xinitrc
+|4,57,40,18,1672764975,"~/.xinitrc"
 
 # Jumplist (newest first):
--'  8  0  ~/.script/imp-test
-|4,39,8,0,1672410269,"~/.script/imp-test"
--'  118  2  ~/Learnig/wiki/Notes.wiki
-|4,39,118,2,1672409395,"~/Learnig/wiki/Notes.wiki"
--'  118  2  ~/Learnig/wiki/Notes.wiki
-|4,39,118,2,1672409395,"~/Learnig/wiki/Notes.wiki"
--'  119  8  ~/Learnig/wiki/Notes.wiki
-|4,39,119,8,1672409247,"~/Learnig/wiki/Notes.wiki"
--'  119  8  ~/Learnig/wiki/Notes.wiki
-|4,39,119,8,1672409247,"~/Learnig/wiki/Notes.wiki"
--'  60  9  ~/Learnig/wiki/Notes.wiki
-|4,39,60,9,1672409245,"~/Learnig/wiki/Notes.wiki"
--'  60  9  ~/Learnig/wiki/Notes.wiki
-|4,39,60,9,1672409245,"~/Learnig/wiki/Notes.wiki"
--'  1  0  ~/Learnig/wiki/Notes.wiki
-|4,39,1,0,1672409230,"~/Learnig/wiki/Notes.wiki"
--'  1  0  ~/Learnig/wiki/Notes.wiki
-|4,39,1,0,1672409230,"~/Learnig/wiki/Notes.wiki"
--'  5  0  ~/Learnig/wiki/index.wiki
-|4,39,5,0,1672409225,"~/Learnig/wiki/index.wiki"
--'  5  0  ~/Learnig/wiki/index.wiki
-|4,39,5,0,1672409225,"~/Learnig/wiki/index.wiki"
--'  1  0  ~/Learnig/wiki/index.wiki
-|4,39,1,0,1672409224,"~/Learnig/wiki/index.wiki"
--'  1  0  ~/Learnig/wiki/index.wiki
-|4,39,1,0,1672409224,"~/Learnig/wiki/index.wiki"
--'  1  0  ~/Learnig/wiki/index.wiki
-|4,39,1,0,1672389863,"~/Learnig/wiki/index.wiki"
--'  1  0  ~/Learnig/wiki/index.wiki
-|4,39,1,0,1672389863,"~/Learnig/wiki/index.wiki"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  16  0  ~/.config/gtk-3.0/settings.ini
-|4,39,16,0,1672383193,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  0  ~/.config/gtk-3.0/settings.ini
-|4,39,1,0,1672383188,"~/.config/gtk-3.0/settings.ini"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  8  ~/conf-tmp
-|4,39,1,8,1672382819,"~/conf-tmp"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  1  11  ~/.script/linkhandler
-|4,39,1,11,1672342923,"~/.script/linkhandler"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
--'  5  24  ~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst
-|4,39,5,24,1672341527,"~/Learnig/SYBBI-Sem_IV/refrence/Corporate_And_Securities_Law-lesson.lst"
+-'  13  7  ~/.xinitrc
+|4,39,13,7,1672827520,"~/.xinitrc"
+-'  1  0  ~/.xinitrc
+|4,39,1,0,1672827497,"~/.xinitrc"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,1,0,1672770859,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,1,0,1672770859,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  5  31  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,5,31,1672770791,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  5  31  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,5,31,1672770791,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  5  31  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,5,31,1672770791,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  5  31  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,5,31,1672770791,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,1,0,1672770752,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,1,0,1672770752,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,1,0,1672770752,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+|4,39,1,0,1672770752,"~/Learnig/SYBBI-Sem_IV/refrence/current-lec"
+-'  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  20  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,20,0,1672770748,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  23  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,23,0,1672770703,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  23  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,23,0,1672770703,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  23  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,23,0,1672770703,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  23  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,23,0,1672770703,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  23  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,23,0,1672770703,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  23  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,23,0,1672770703,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  15  6  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,15,6,1672770508,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  15  6  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,15,6,1672770508,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  15  6  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,15,6,1672770508,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  15  6  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,15,6,1672770508,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  15  6  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,15,6,1672770508,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  15  6  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,15,6,1672770508,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  18  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,18,4,1672770487,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  18  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,18,4,1672770487,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  18  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,18,4,1672770487,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  18  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,18,4,1672770487,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  18  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,18,4,1672770487,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  18  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,18,4,1672770487,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  19  5  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,19,5,1672770486,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  19  5  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,19,5,1672770486,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  19  5  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,19,5,1672770486,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  19  5  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,19,5,1672770486,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  19  5  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,19,5,1672770486,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  19  5  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,19,5,1672770486,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  10  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,10,4,1672770193,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  10  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,10,4,1672770193,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  10  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,10,4,1672770193,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  10  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,10,4,1672770193,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  10  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,10,4,1672770193,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  10  4  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,10,4,1672770193,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  13  46  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,13,46,1672770172,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  13  46  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,13,46,1672770172,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  13  46  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,13,46,1672770172,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  13  46  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,13,46,1672770172,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  13  46  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,13,46,1672770172,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  13  46  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,13,46,1672770172,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,6,0,1672769938,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,6,0,1672769938,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,6,0,1672769938,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,6,0,1672769938,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,6,0,1672769938,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  6  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,6,0,1672769938,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  7  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,7,0,1672769779,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  7  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,7,0,1672769779,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  7  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,7,0,1672769779,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  7  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,7,0,1672769779,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  7  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,7,0,1672769779,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  7  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,7,0,1672769779,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,1,0,1672769775,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,1,0,1672769775,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,1,0,1672769775,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  1  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,1,0,1672769775,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  17  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,17,0,1672769118,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  17  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,17,0,1672769118,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  17  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,17,0,1672769118,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  17  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,17,0,1672769118,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  17  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,17,0,1672769118,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  17  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,17,0,1672769118,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  16  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,16,0,1672769092,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  16  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,16,0,1672769092,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  16  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,16,0,1672769092,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  16  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,16,0,1672769092,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  16  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,16,0,1672769092,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  16  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,16,0,1672769092,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  14  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,14,0,1672769090,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  14  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,14,0,1672769090,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  14  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,14,0,1672769090,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  14  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,14,0,1672769090,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  14  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,14,0,1672769090,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  14  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,14,0,1672769090,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  12  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,12,0,1672769088,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  12  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,12,0,1672769088,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  12  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,12,0,1672769088,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  12  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,12,0,1672769088,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  12  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,12,0,1672769088,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  12  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,12,0,1672769088,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  9  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,9,0,1672769083,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  9  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,9,0,1672769083,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  9  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,9,0,1672769083,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  9  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,9,0,1672769083,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  9  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,9,0,1672769083,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
+-'  9  0  ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+|4,39,9,0,1672769083,"~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst"
 
 # History of marks within files (newest to oldest):
 
+> ~/.xinitrc
+	*	1672827519	0
+	"	13	7
+	^	10	8
+	.	10	7
+	+	10	8
+	+	11	0
+	+	23	0
+	+	24	57
+	+	10	7
+
+> ~/Learnig/SYBBI-Sem_IV/refrence/Business_Economics-II-QB.lst
+	*	1672770858	0
+	"	1	0
+	^	23	0
+	.	23	0
+	+	1	2
+	+	2	2
+	+	3	2
+	+	4	2
+	+	5	2
+	+	7	2
+	+	8	2
+	+	10	3
+	+	12	3
+	+	13	3
+	+	14	3
+	+	15	3
+	+	16	3
+	+	1	44
+	+	2	29
+	+	1	28
+	+	2	66
+	+	3	71
+	+	4	60
+	+	5	61
+	+	6	3
+	+	1	0
+	+	7	0
+	+	6	55
+	+	7	72
+	+	8	64
+	+	9	70
+	+	6	0
+	+	10	72
+	+	12	46
+	+	13	45
+	+	14	37
+	+	11	49
+	+	12	222
+	+	12	1
+	+	13	1
+	+	14	1
+	+	15	1
+	+	16	1
+	+	17	1
+	+	10	0
+	+	15	56
+	+	16	9
+	+	17	8
+	+	18	0
+	+	19	0
+	+	21	0
+	+	19	1
+	+	21	1
+	+	16	48
+	+	14	0
+	+	20	0
+	+	17	70
+	+	18	81
+	+	19	64
+	+	15	0
+	+	20	45
+	+	21	0
+	+	23	0
+	+	21	1
+	+	23	1
+	+	21	1
+	+	23	1
+	+	21	47
+	+	23	0
+	+	22	0
+	+	23	0
+
+> ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
+	*	1672770790	0
+	"	5	31
+	^	5	32
+	.	5	31
+	+	1	8
+	+	2	0
+	+	1	8
+	+	3	4
+	+	6	0
+	+	3	20
+	+	2	70
+	+	3	45
+	+	6	2
+	+	3	62
+	+	6	23
+	+	4	37
+	+	5	4
+	+	6	31
+	+	5	31
+
+> ~/Learnig/SYBBI-Sem_IV/refrence/Financial_Managementâ€“II-lesson.lst
+	*	1672768823	0
+	"	1	0
+
+> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/Project_report/points
+	*	1672743226	0
+	"	1	0
+	^	1	0
+
+> ~/.local/src/git/dmenu-luke/config.h
+	*	1672740205	0
+	"	1	7
+	^	1	8
+	.	1	7
+	+	35	0
+	+	31	0
+	+	34	0
+	+	33	0
+	+	31	0
+	+	23	1
+	+	25	2
+	+	31	3
+	+	12	1
+	+	13	44
+	+	23	0
+	+	25	0
+	+	31	2
+	+	25	0
+	+	12	0
+	+	13	43
+	+	32	0
+	+	28	0
+	+	30	0
+	+	31	0
+	+	1	7
+
+> ~/.local/src/git/dmenu-luke/.git/COMMIT_EDITMSG
+	*	1672739695	0
+	"	1	35
+	^	1	36
+	.	1	35
+	+	1	35
+
+> ~/.local/src/git/dmenu-luke/dmenu.1
+	*	1672739605	0
+	"	7	0
+	.	7	0
+	+	11	0
+	+	6	0
+	+	11	1
+	+	11	0
+	+	9	0
+	+	10	0
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/.local/src/git/dmenu-luke/dmenu.c
+	*	1672739426	0
+	"	1018	0
+	^	931	0
+	.	1018	0
+	+	740	0
+	+	927	0
+	+	1017	0
+	+	1019	0
+	+	1017	0
+	+	931	2
+	+	932	60
+	+	931	1
+	+	932	59
+	+	931	0
+	+	1017	0
+	+	1018	0
+
+> ~/.local/src/git/dmenu-luke/config.mk
+	*	1672739261	0
+	"	23	69
+	^	23	70
+	.	23	69
+	+	21	0
+	+	23	69
+
+> ~/.local/src/git/dmenu-luke/dmenu.1.rej
+	*	1672738550	0
+	"	7	0
+
+> ~/.local/src/git/dmenu-luke/config.h.rej
+	*	1672738495	0
+	"	7	0
+
+> ~/.local/src/git/dmenu-luke/config.ml
+	*	1672738078	0
+	"	1	0
+
+> ~/.local/src/git/dmenu/config.h
+	*	1672737684	0
+	"	16	18
+	^	16	19
+	.	16	18
+	+	10	1
+	+	15	2
+	+	10	1
+	+	15	3
+	+	12	2
+	+	16	53
+	+	17	0
+	+	16	18
+
+> ~/.local/src/git/dmenu/config.
+	*	1672737620	0
+	"	1	0
+
+> ~/Hobbys/Hugo/Dairy/content/2023-01-02-Mon-22:38.md
+	*	1672681369	0
+	"	22	70
+	^	22	71
+	.	22	70
+	+	5	0
+	+	6	204
+	+	7	84
+	+	6	0
+	+	7	212
+	+	15	0
+	+	7	239
+	+	8	94
+	+	8	95
+	+	8	116
+	+	9	0
+	+	10	212
+	+	11	257
+	+	11	258
+	+	12	254
+	+	13	262
+	+	14	41
+	+	15	0
+	+	14	221
+	+	15	0
+	+	16	287
+	+	17	132
+	+	17	0
+	+	17	173
+	+	23	0
+	+	17	0
+	+	17	205
+	+	18	138
+	+	17	123
+	+	18	297
+	+	21	0
+	+	19	0
+	+	19	86
+	+	20	152
+	+	20	141
+	+	20	72
+	+	20	141
+	+	21	0
+	+	22	70
+
+> ~/vid/screenrec/obs/list
+	*	1672678545	0
+	"	2	11
+	^	2	12
+	.	2	11
+	+	2	0
+	+	1	14
+	+	2	11
+
+> ~/.config/newsboat/urls
+	*	1672664841	0
+	"	13	43
+	^	13	0
+	.	13	0
+	+	1	12
+	+	14	11
+	+	9	10
+	+	15	0
+	+	9	0
+	+	15	0
+	+	4	0
+	+	9	0
+	+	11	0
+	+	15	0
+	+	11	0
+	+	9	0
+	+	4	0
+	+	9	0
+	+	3	0
+	+	4	0
+	+	8	76
+	+	9	0
+	+	8	0
+	+	2	0
+	+	9	0
+	+	10	0
+	+	12	0
+	+	13	0
+
 > ~/Learnig/wiki/Notes.wiki
-	*	1672409252	0
-	"	118	2
+	*	1672639578	0
+	"	1	0
 	^	129	9
 	.	129	0
 	+	114	0
@@ -725,7 +1102,7 @@ $
 	p	104	0
 
 > ~/Learnig/wiki/index.wiki
-	*	1672409225	0
+	*	1672639570	0
 	"	5	0
 	^	9	47
 	.	9	46
@@ -751,6 +1128,710 @@ $
 	+	8	0
 	+	10	0
 	+	9	46
+
+> ~/vid/screenrec/obs/time
+	*	1672606780	0
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/tut/watch-show
+	*	1672605006	0
+	"	1	8
+	^	7	40
+	.	7	39
+	+	7	103
+	+	7	4
+	+	7	0
+	+	7	4
+	+	7	5
+	+	7	0
+	+	7	110
+	+	7	103
+	+	7	0
+	+	7	121
+	+	11	24
+	+	11	23
+	+	11	0
+	+	11	15
+	+	1	9
+	+	3	25
+	+	7	40
+	+	7	1
+	+	7	111
+	+	7	47
+	+	7	103
+	+	3	15
+	+	7	120
+	+	7	103
+	+	7	135
+	+	7	0
+	+	7	48
+	+	7	18
+	+	7	23
+	+	7	103
+	+	7	61
+	+	3	0
+	+	3	26
+	+	7	103
+	+	7	46
+	+	7	38
+	+	1	8
+	+	3	25
+	+	3	66
+	+	7	67
+	+	7	105
+	+	7	128
+	+	2	23
+	+	3	42
+	+	3	26
+	+	7	134
+	+	7	103
+	+	3	38
+	+	3	0
+	+	7	33
+	+	3	0
+	+	3	37
+	+	3	38
+	+	3	37
+	+	7	0
+	+	7	10
+	+	3	0
+	+	7	103
+	+	9	0
+	+	7	48
+	+	7	0
+	+	3	0
+	+	7	112
+	+	7	0
+	+	7	103
+	+	9	0
+	+	7	9
+	+	7	103
+	+	7	0
+	+	9	0
+	+	8	0
+	+	7	5
+	+	7	19
+	+	7	39
+	+	8	0
+	+	7	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	4	36
+	+	5	34
+	+	7	0
+	+	9	27
+	+	2	10
+	+	7	0
+	+	9	12
+	+	7	0
+	+	8	0
+	+	7	0
+	+	8	9
+	+	8	0
+	+	6	0
+	+	7	0
+	+	6	0
+	+	7	69
+	+	8	7
+	+	9	18
+	+	7	39
+
+> ~/Hobbys/Hugo/Dairy/content/2023-01-01-Sun-23:39.md
+	*	1672596869	0
+	"	8	0
+	.	8	0
+	+	5	0
+	+	6	180
+	+	8	0
+	+	6	258
+	+	8	0
+	+	8	81
+	+	8	6
+	+	8	0
+	+	7	0
+	+	8	0
+
+> ~/.config/watch-show/config
+	*	1672587308	0
+	"	1	0
+	^	2	12
+	.	2	11
+	+	1	3
+	+	1	0
+	+	1	34
+	+	2	0
+	+	1	38
+	+	2	9
+	+	1	27
+	+	1	0
+	+	2	10
+	+	3	9
+	+	2	11
+
+> ~/.script/imp-test/getopt
+	*	1672570215	0
+	"	4	6
+	^	4	7
+	.	4	6
+	+	2	16
+	+	4	0
+	+	3	12
+	+	4	0
+	+	2	6
+	+	3	2
+	+	4	3
+	+	3	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	2	0
+	+	4	6
+
+> ~/.script/httpshare
+	*	1672569821	0
+	"	75	0
+
+> ~/config
+	*	1672568833	0
+	"	3	3
+	^	1	4
+	.	1	3
+	+	1	3
+	+	3	11
+	+	2	9
+	+	1	3
+
+> ~/Hobbys/Hugo/Dairy/content/2023-01-01-Sun-02:23.md
+	*	1672520029	0
+	"	5	52
+	^	5	53
+	.	5	52
+	+	5	52
+
+> ~/.script/journal
+	*	1672520004	0
+	"	6	2
+	^	6	3
+	.	6	2
+	+	2	32
+	+	4	28
+	+	3	32
+	+	4	2
+	+	2	16
+	+	4	0
+	+	5	0
+	+	6	1
+	+	5	1
+	+	6	2
+
+> ~/Hobbys/Hugo/Dairy/2023-01-01-Sun-02:22.md
+	*	1672519972	0
+	"	1	0
+
+> ~/Hobbys/Hugo/Dairy/content/2023-01-01-Sun-02:20.md
+	*	1672519909	0
+	"	3	0
+
+> ~/Hobbys/Hugo/Dairy/content/2023-01-01-Sun-02:21.md
+	*	1672519904	0
+	"	2	0
+
+> ~/Hobbys/Hugo/Dairy/2023-01-01-Sun-02:21.md
+	*	1672519881	0
+	"	1	0
+
+> ~/Hobbys/Hugo/Dairy/2023-01-01-Sun-02:20.md
+	*	1672519850	0
+	"	1	0
+
+> ~/Hobbys/Hugo/Dairy/archetypes/default.md
+	*	1672519795	0
+	"	4	0
+	.	5	0
+	+	2	0
+	+	1	0
+	+	4	0
+	+	5	0
+
+> ~/Hobbys/Hugo/Dairy/content/lol.md
+	*	1672519749	0
+	"	1	0
+
+> ~/Hobbys/Hugo/Dairy/config.toml
+	*	1672519571	0
+	"	1	0
+	^	4	27
+	.	4	26
+	+	4	26
+
+> ~/Hobbys/Hugo/Dairy/2023-01-01-Sun-02:16.md
+	*	1672519562	0
+	"	1	0
+
+> ~/Hobbys/Hugo/Dairy/2023-01-01-Sun-02:14.md
+	*	1672519490	0
+	"	1	0
+	^	1	0
+
+> ~/Hobbys/Hugo/Dairy//2023-01-01-Sun-02:13.md
+	*	1672519438	0
+	"	1	2
+	^	1	3
+	.	1	2
+	+	1	2
+
+> ~/.vimrc
+	*	1672519201	0
+	"	62	0
+	.	62	0
+	+	1	0
+	+	61	6
+	+	62	82
+	+	62	0
+
+> ~/Hobbys/Hugo/theme/simp-journal-theme/.git/COMMIT_EDITMSG
+	*	1672517984	0
+	"	1	20
+	^	1	21
+	.	2	0
+	+	1	21
+	+	2	0
+
+> ~/Hobbys/Hugo/theme/simp-journal-theme/README.md
+	*	1672517873	0
+	"	4	54
+	^	4	55
+	.	4	54
+	+	1	0
+	+	1	39
+	+	2	0
+	+	3	8
+	+	4	54
+
+> ~/Hobbys/Hugo/quickstart/config.toml
+	*	1672517703	0
+	"	4	8
+	^	4	9
+	.	4	9
+	+	4	0
+	+	5	0
+	+	4	9
+
+> ~/Hobbys/Hugo/Dairy/themes/mu-simp-direy/archetypes/default.md
+	*	1672517163	0
+	"	2	0
+	.	4	0
+	+	4	0
+
+> ~/hugo/Direy/content/2023-01-01-Sun-01:31.md
+	*	1672516950	0
+	"	5	242
+	^	5	243
+	.	5	242
+	+	6	0
+	+	5	242
+
+> ~/hugo/Direy/config.toml
+	*	1672516815	0
+	"	4	9
+	^	4	13
+	.	4	0
+	+	4	19
+	+	3	16
+	+	4	17
+	+	5	0
+	+	4	0
+
+> ~/hugo/Direy/archetypes/default.md
+	*	1672516799	0
+	"	4	0
+	.	4	0
+	+	4	0
+
+> ~/hugo/Direy/content/Sun Jan  1 01:25:49 AM IST 2023.md
+	*	1672516792	0
+	"	4	0
+	^	5	146
+	.	4	0
+	+	5	145
+	+	4	0
+
+> ~/hugo/Direy/content/200.md
+	*	1672516778	0
+	"	4	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/_default/list.html
+	*	1672516691	0
+	"	7	0
+	.	4	0
+	+	1	0
+	+	6	0
+	+	8	2
+	+	11	0
+	+	10	1
+	+	2	0
+	+	5	28
+	+	5	0
+	+	5	27
+	+	5	0
+	+	2	0
+	+	8	0
+	+	7	0
+	+	10	0
+	+	2	0
+	+	3	0
+	+	2	0
+	+	4	0
+
+> ~/hugo/Direy/content/_index.md
+	*	1672516531	0
+	"	7	0
+	.	7	0
+	+	7	2
+	+	7	0
+	+	8	13
+	+	2	11
+	+	8	0
+	+	4	0
+	+	2	18
+	+	8	0
+	+	2	33
+	+	5	0
+	+	6	40
+	+	7	0
+
+> ~/hugo/Direy/themes/simp-direy/layouts/_default/list.html
+	*	1672516160	0
+	"	4	0
+	.	6	0
+	+	8	0
+	+	9	0
+	+	6	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/partials/footer.html
+	*	1672516011	0
+	"	1	0
+	^	1	5
+	.	1	0
+	+	1	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/_default/single.html
+	*	1672515952	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/hugo/Direy/themes/lugo/layouts/_default/list.html
+	*	1672515456	0
+	"	9	0
+	^	8	14
+	.	9	0
+	+	7	0
+	+	7	152
+	+	7	0
+	+	7	157
+	+	8	0
+	+	7	6
+	+	1	0
+	+	2	0
+	+	8	0
+	+	12	0
+	+	1	0
+	+	12	0
+	+	8	12
+	+	9	0
+	+	7	0
+	+	7	127
+	+	7	5
+	+	8	0
+	+	7	2
+	+	8	15
+	+	7	2
+	+	7	92
+	+	7	0
+	+	7	134
+	+	9	5
+	+	8	14
+	+	9	0
+
+> ~/hugo/Direy/static/style.css
+	*	1672515428	0
+	"	4	0
+	.	4	0
+	+	13	0
+	+	7	0
+	+	4	0
+	+	4	7
+	+	4	0
+	+	4	8
+	+	4	13
+	+	4	1
+	+	4	10
+	+	4	0
+
+> ~/hugo/zola-journal-template/content/_index.md
+	*	1672515389	0
+	"	5	0
+
+> ~/hugo/zola-journal-template/content/203.md
+	*	1672515371	0
+	"	6	5
+	^	6	6
+	.	6	5
+	+	2	14
+	+	6	5
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/partials/nav.html
+	*	1672515271	0
+	"	4	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/_default/baseof.html
+	*	1672515231	0
+	"	1	0
+
+> ~/hugo/Direy/content/2022-20.md
+	*	1672514881	0
+	"	11	0
+	.	12	0
+	+	1	0
+	+	6	4
+	+	5	0
+	+	4	24
+	+	8	6
+	+	9	9
+	+	10	9
+	+	11	22
+	+	12	17
+	+	12	14
+	+	12	0
+	+	12	7
+	+	12	3
+	+	12	0
+	+	12	2
+	+	12	0
+	+	12	3
+	+	12	7
+	+	12	11
+	+	12	15
+	+	12	19
+	+	12	23
+	+	12	27
+	+	12	31
+	+	12	35
+	+	12	39
+	+	12	43
+	+	12	47
+	+	12	51
+	+	12	55
+	+	12	59
+	+	12	63
+	+	12	67
+	+	12	71
+	+	12	75
+	+	12	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/archetypes/default.md
+	*	1672510536	0
+	"	3	0
+	^	2	8
+	.	2	7
+	+	2	8
+	+	3	6
+	+	2	7
+
+> ~/hugo/Direy/themes/mu-simp-direy/theme.toml
+	*	1672510268	0
+	"	2	13
+	^	19	14
+	.	19	13
+	+	14	12
+	+	19	13
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/shortcodes/vid.html
+	*	1672510046	0
+	"	1	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/partials/header.html
+	*	1672509861	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/index.html
+	*	1672509849	0
+	"	2	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/hugo/Direy/content/lol.md
+	*	1672509832	0
+	"	7	0
+	.	8	0
+	+	7	2
+	+	5	0
+	+	4	11
+	+	8	0
+
+> ~/hugo/Direy/themes/simp-direy/layouts/_default/single.html
+	*	1672507367	0
+	"	1	0
+
+> ~/hugo/quickstart/themes/ananke/layouts/index.html
+	*	1672507172	0
+	"	55	0
+
+> ~/hugo/Direy/themes/mu-simp-direy/layouts/404.html
+	*	1672505785	0
+	"	2	22
+	^	2	19
+	.	2	22
+	+	1	10
+	+	2	22
+
+> ~/hugo/zola-journal-template/static/css/diary.css
+	*	1672494218	0
+	"	1	0
+
+> ~/hugo/new-site/config.toml
+	*	1672493878	0
+	"	4	13
+	^	4	14
+	.	4	13
+	+	4	13
+
+> ~/hugo/lugo/config.toml
+	*	1672493711	0
+	"	4	13
+	^	4	14
+	.	4	13
+	+	4	13
+
+> ~/hugo/lugo/content/_index.md
+	*	1672493593	0
+	"	7	6
+	^	7	7
+	.	7	6
+	+	6	7
+	+	7	6
+
+> ~/hugo/Direy/content/2022-54-31_18:54.md
+	*	1672493318	0
+	"	6	0
+	^	7	2
+	.	6	0
+	+	6	0
+	+	6	1
+	+	7	1
+	+	6	0
+
+> ~/hugo/quickstart/themes/ananke/assets/ananke/css/_styles.css
+	*	1672493220	0
+	"	20	0
+
+> ~/hugo/Direy/content/2022-200.md
+	*	1672492810	0
+	"	3	7
+	.	1	0
+	+	1	0
+
+> ~/hugo/Direy/themes/simple-blog-direy/archetypes/default.md
+	*	1672492690	0
+	"	2	6
+	^	2	7
+	.	2	6
+	+	2	0
+	+	3	0
+	+	2	6
+
+> ~/hugo/Direy/themes/simple-blog-direy/config.toml
+	*	1672491840	0
+	"	6	0
+
+> ~/hugo/Direy/themes/simple-blog-direy/static/style.css
+	*	1672491826	0
+	"	1	0
+
+> ~/hugo/study/content/DT/Business_gain.md
+	*	1672491138	0
+	"	2	0
+
+> ~/hugo/zola-journal-template/content/2022-10-20.md
+	*	1672491137	0
+	"	2	13
+	^	2	14
+	.	2	13
+	+	3	2
+	+	2	5
+	+	4	3
+	+	5	6
+	+	2	13
+
+> ~/tpsad/resent-show
+	*	1672430028	0
+	"	7	42
+	.	24	0
+	+	1	8
+	+	2	24
+	+	6	37
+	+	7	9
+	+	6	39
+	+	7	42
+	+	8	11
+	+	7	55
+	+	8	40
+	+	9	9
+	+	6	0
+	+	3	4
+	+	5	7
+	+	10	1
+	+	16	2
+	+	23	0
+	+	12	4
+	+	13	0
+	+	12	24
+	+	12	1
+	+	12	0
+	+	3	27
+	+	22	2
+	+	18	0
+	+	21	0
+	+	18	0
+	+	21	0
+	+	19	20
+	+	3	27
+	+	17	7
+	+	18	0
+	+	24	0
+
+> ~/.config/sxhkd/sxhkdrc
+	*	1672424897	0
+	"	2	0
+	.	2	0
+	+	84	58
+	+	17	0
+	+	19	0
+	+	18	22
+	+	17	8
+	+	1	5
+	+	1	8
+	+	1	15
+	+	1	6
+	+	1	0
+	+	1	4
+	+	1	0
+	+	2	0
+
+> ~/.dotfiles/COMMIT_EDITMSG
+	*	1672410594	0
+	"	1	32
+	^	1	33
+	.	2	0
+	+	2	0
 
 > ~/.config/gtk-3.0/settings.ini
 	*	1672383192	0
@@ -889,22 +1970,6 @@ $
 	+	7	20
 	+	8	33
 
-> ~/Learnig/SYBBI-Sem_IV/refrence/current-lec
-	*	1672339872	0
-	"	3	62
-	^	3	63
-	.	3	62
-	+	1	8
-	+	2	0
-	+	1	8
-	+	3	4
-	+	4	0
-	+	3	20
-	+	2	70
-	+	3	45
-	+	4	2
-	+	3	62
-
 > ~/Learnig/SYBBI-Sem_IV/refrence/Entrepreneurship_Management-lesson.lst
 	*	1672339838	0
 	"	4	0
@@ -953,31 +2018,6 @@ $
 	+	2	0
 	+	5	52
 	+	4	48
-
-> ~/.config/newsboat/urls
-	*	1672254448	0
-	"	2	0
-	.	2	0
-	+	1	12
-	+	11	11
-	+	9	10
-	+	12	0
-	+	9	0
-	+	12	0
-	+	4	0
-	+	9	0
-	+	10	0
-	+	12	0
-	+	10	0
-	+	9	0
-	+	4	0
-	+	9	0
-	+	3	0
-	+	4	0
-	+	8	76
-	+	9	0
-	+	8	0
-	+	2	0
 
 > ~/.config/newsboat/yt
 	*	1672254161	0
@@ -1031,1468 +2071,6 @@ $
 	+	1	0
 	+	2	12
 
-> ~/.config/sxhkd/sxhkdrc
-	*	1672251052	0
-	"	1	0
-	^	18	9
-	.	18	8
-	+	85	58
-	+	18	0
-	+	20	0
-	+	19	22
-	+	18	8
-
 > ~/.local/src/git/Dwm/config.h
 	*	1672250805	0
 	"	62	0
-
-> ~/.local/src/git/Dwm/config.
-	*	1672250786	0
-	"	1	0
-
-> ~/.config/newsboat/config
-	*	1672250711	0
-	"	51	0
-
-> ~/.local/share/icons/ganasong/index.theme
-	*	1672231121	0
-	"	4	13
-	^	3	14
-	.	3	13
-	+	2	14
-	+	5	11
-	+	3	13
-
-> ~/.X
-	*	1672230716	0
-	"	1	0
-
-> ~/.local/share/icons/lol/index.theme
-	*	1672230706	0
-	"	4	0
-	.	5	0
-	+	5	0
-
-> ~/.local/share/icons/index.theme
-	*	1672230630	0
-	"	3	9
-	^	2	10
-	.	2	9
-	+	1	0
-	+	2	9
-
-> ~/pic/bg/tmp
-	*	1672230450	0
-	"	1	27
-	^	1	28
-	.	1	7
-	+	1	18
-	+	2	0
-	+	1	7
-
-> ~/.local/share/icons/lol/cursors/tmp
-	*	1672229507	0
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	41
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	26
-	+	1	48
-	+	1	1
-	+	1	91
-	+	2	0
-	+	1	0
-	+	1	26
-	+	2	0
-	+	1	12
-
-> ~/.config/aliasrc
-	*	1672227792	0
-	"	37	0
-	^	36	92
-	.	37	0
-	+	30	16
-	+	33	56
-	+	37	22
-	+	89	0
-	+	73	0
-	+	72	0
-	+	73	0
-	+	44	0
-	+	43	0
-	+	45	8
-	+	37	0
-	+	45	9
-	+	53	0
-	+	45	21
-	+	52	0
-	+	46	20
-	+	46	22
-	+	49	0
-	+	46	30
-	+	49	177
-	+	50	0
-	+	51	5
-	+	50	24
-	+	50	38
-	+	49	5
-	+	50	45
-	+	51	42
-	+	49	0
-	+	46	0
-	+	45	9
-	+	49	0
-	+	45	9
-	+	51	43
-	+	46	0
-	+	48	82
-	+	49	40
-	+	1	12
-	+	2	0
-	+	2	6
-	+	31	0
-	+	33	0
-	+	34	0
-	+	35	0
-	+	2	0
-	+	42	0
-	+	32	14
-	+	37	28
-	+	36	91
-	+	37	0
-
-> ~/.local/share/bookmark
-	*	1672227517	0
-	"	5	20
-	^	5	19
-	.	5	18
-	+	4	0
-	+	5	0
-	+	5	18
-
-> /usr/share/icons/default/index.theme
-	*	1672143737	0
-	"	2	9
-	^	2	9
-	.	2	0
-	+	2	0
-
-> ~/x
-	*	1672143656	0
-	"	1	0
-	.	1	0
-	+	1	15
-	+	1	0
-
-> ~/.config/gamerc
-	*	1671772399	0
-	"	2	11
-	^	1	26
-	.	2	12
-	+	1	1
-	+	2	0
-	+	1	0
-	+	2	33
-	+	1	25
-	+	2	12
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/plan/jay.md
-	*	1671610155	0
-	"	16	24
-	^	16	25
-	.	16	24
-	+	13	8
-	+	2	0
-	+	3	0
-	+	3	30
-	+	5	0
-	+	2	10
-	+	14	0
-	+	19	0
-	+	20	20
-	+	21	24
-	+	22	17
-	+	23	23
-	+	24	18
-	+	15	18
-	+	17	8
-	+	17	15
-	+	2	22
-	+	3	30
-	+	3	0
-	+	4	23
-	+	5	0
-	+	12	0
-	+	21	0
-	+	3	0
-	+	5	0
-	+	7	10
-	+	7	0
-	+	11	0
-	+	6	2
-	+	7	0
-	+	6	3
-	+	7	15
-	+	8	19
-	+	9	23
-	+	10	17
-	+	11	20
-	+	18	0
-	+	14	13
-	+	17	0
-	+	16	24
-
-> ~/Games/dead-cell.link
-	*	1671554639	0
-	"	1	224
-	^	1	225
-	.	1	225
-	+	1	0
-	+	1	225
-
-> /tmp/zsh3iMpyc.zsh
-	*	1671554634	0
-	"	1	0
-
-> ~/.bashrc
-	*	1671554105	0
-	"	14	6
-
-> ~/rm-dotfile.list
-	*	1671553973	0
-	"	7	0
-	.	4	0
-	+	1	0
-	+	2	0
-	+	4	0
-
-> ~/.config/a
-	*	1671553547	0
-	"	1	0
-
-> ~/.script/alert_s
-	*	1671553541	0
-	"	1	0
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/plan/name
-	*	1671544547	0
-	"	4	19
-	^	4	0
-	.	4	0
-	+	1	0
-	+	2	0
-	+	3	15
-	+	3	0
-	+	4	0
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/plan/point-required.md
-	*	1671542090	0
-	"	6	18
-	^	29	31
-	.	29	30
-	+	1	0
-	+	13	0
-	+	22	0
-	+	26	0
-	+	36	0
-	+	38	0
-	+	13	19
-	+	38	0
-	+	39	0
-	+	40	14
-	+	1	0
-	+	13	0
-	+	9	30
-	+	10	0
-	+	11	23
-	+	39	0
-	+	36	0
-	+	39	0
-	+	36	0
-	+	28	0
-	+	35	1
-	+	35	0
-	+	17	0
-	+	20	0
-	+	13	0
-	+	12	37
-	+	20	17
-	+	17	0
-	+	25	0
-	+	21	0
-	+	20	18
-	+	17	16
-	+	20	16
-	+	21	51
-	+	25	50
-	+	17	0
-	+	3	0
-	+	42	0
-	+	75	0
-	+	76	9
-	+	79	0
-	+	78	0
-	+	77	19
-	+	30	23
-	+	31	29
-	+	32	16
-	+	31	23
-	+	32	31
-	+	33	4
-	+	30	37
-	+	31	20
-	+	33	30
-	+	34	20
-	+	29	0
-	+	31	0
-	+	29	30
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/plan/questions.md
-	*	1671541419	0
-	"	13	0
-	^	14	39
-	.	14	38
-	+	30	0
-	+	31	27
-	+	24	0
-	+	27	22
-	+	9	36
-	+	18	27
-	+	18	0
-	+	23	0
-	+	32	39
-	+	2	0
-	+	6	0
-	+	27	0
-	+	32	0
-	+	33	0
-	+	6	0
-	+	33	0
-	+	6	2
-	+	6	0
-	+	39	0
-	+	6	0
-	+	43	0
-	+	49	0
-	+	43	0
-	+	40	0
-	+	33	0
-	+	52	0
-	+	33	0
-	+	58	0
-	+	71	0
-	+	58	0
-	+	6	0
-	+	1	8
-	+	30	1
-	+	31	1
-	+	56	1
-	+	9	2
-	+	19	17
-	+	20	12
-	+	19	23
-	+	20	26
-	+	21	19
-	+	6	0
-	+	7	27
-	+	9	0
-	+	18	0
-	+	5	11
-	+	5	8
-	+	6	3
-	+	5	0
-	+	8	0
-	+	15	0
-	+	22	0
-	+	23	23
-	+	29	0
-	+	27	31
-	+	6	19
-	+	5	0
-	+	9	0
-	+	6	0
-	+	2	0
-	+	3	27
-	+	5	0
-	+	5	7
-	+	5	0
-	+	5	23
-	+	5	0
-	+	11	0
-	+	10	0
-	+	16	0
-	+	17	0
-	+	8	1
-	+	11	2
-	+	12	0
-	+	13	15
-	+	10	0
-	+	1	19
-	+	5	0
-	+	4	24
-	+	52	25
-	+	52	0
-	+	54	0
-	+	54	11
-	+	54	0
-	+	54	12
-	+	54	25
-	+	52	26
-	+	54	0
-	+	53	31
-	+	55	0
-	+	71	0
-	+	68	34
-	+	8	0
-	+	5	0
-	+	14	38
-
-> ~/.script/SS
-	*	1671539133	0
-	"	17	33
-	^	17	34
-	.	17	33
-	+	19	0
-	+	17	5
-	+	18	0
-	+	17	52
-	+	7	41
-	+	17	33
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/plan/QA.md
-	*	1671538657	0
-	"	20	0
-	^	59	33
-	.	59	0
-	+	46	1
-	+	42	2
-	+	44	2
-	+	44	85
-	+	42	35
-	+	44	86
-	+	37	24
-	+	38	30
-	+	39	23
-	+	41	0
-	+	50	0
-	+	54	0
-	+	75	0
-	+	50	0
-	+	54	0
-	+	74	0
-	+	54	37
-	+	55	0
-	+	56	0
-	+	57	0
-	+	54	0
-	+	55	19
-	+	56	30
-	+	57	30
-	+	54	0
-	+	52	0
-	+	18	5
-	+	53	6
-	+	58	26
-	+	53	14
-	+	58	37
-	+	58	27
-	+	58	0
-	+	58	42
-	+	74	0
-	+	58	27
-	+	58	0
-	+	58	1
-	+	58	0
-	+	58	34
-	+	36	29
-	+	10	5
-	+	12	19
-	+	13	21
-	+	16	0
-	+	13	1
-	+	15	12
-	+	15	11
-	+	15	10
-	+	15	26
-	+	13	0
-	+	10	1
-	+	18	1
-	+	53	1
-	+	1	8
-	+	4	0
-	+	5	19
-	+	7	8
-	+	9	0
-	+	15	0
-	+	14	0
-	+	15	0
-	+	13	0
-	+	11	0
-	+	6	0
-	+	2	1
-	+	3	1
-	+	7	0
-	+	8	9
-	+	49	36
-	+	50	0
-	+	74	0
-	+	58	41
-	+	74	0
-	+	58	0
-	+	66	0
-	+	65	0
-	+	61	23
-	+	65	0
-	+	61	0
-	+	62	31
-	+	65	0
-	+	62	0
-	+	61	36
-	+	62	32
-	+	63	12
-	+	65	2
-	+	63	0
-	+	65	0
-	+	64	23
-	+	64	0
-	+	60	0
-	+	62	9
-	+	59	0
-	+	60	0
-	+	59	0
-
-> ~/.config/zsh/.zshrc
-	*	1671536350	0
-	"	89	0
-
-> ~/.zshrc
-	*	1671536332	0
-	"	2	0
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/plan/poinsts.md
-	*	1671524852	0
-	"	34	1
-	^	28	31
-	.	34	0
-	+	25	21
-	+	59	0
-	+	26	2
-	+	26	0
-	+	59	0
-	+	25	21
-	+	26	21
-	+	25	21
-	+	26	31
-	+	28	30
-	+	32	0
-	+	34	0
-
-> ~/Learnig/SYBBI-Sem_IV/idk/google_classroom.lst
-	*	1671460041	0
-	"	7	21
-	^	7	22
-	.	7	21
-	+	4	25
-	+	5	2
-	+	7	21
-	+	8	0
-	+	5	3
-	+	6	16
-	+	7	28
-	+	6	22
-	+	5	13
-	+	4	33
-	+	3	33
-	+	2	35
-	+	1	41
-	+	2	39
-	+	3	38
-	+	7	21
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/points/poinsts.md
-	*	1671459533	0
-	"	24	0
-	.	87	0
-	+	54	0
-	+	46	0
-	+	71	5
-	+	71	0
-	+	65	0
-	+	64	1
-	+	65	50
-	+	66	23
-	+	85	0
-	+	74	2
-	+	84	0
-	+	90	0
-	+	64	0
-	+	65	0
-	+	74	0
-	+	84	0
-	+	90	0
-	+	81	0
-	+	88	0
-	+	74	11
-	+	68	10
-	+	66	11
-	+	65	13
-	+	69	0
-	+	69	12
-	+	70	10
-	+	69	0
-	+	72	17
-	+	85	0
-	+	72	34
-	+	79	23
-	+	72	19
-	+	79	24
-	+	75	31
-	+	66	39
-	+	75	8
-	+	69	27
-	+	75	10
-	+	68	46
-	+	69	0
-	+	67	43
-	+	53	19
-	+	48	6
-	+	48	1
-	+	53	1
-	+	44	0
-	+	34	0
-	+	39	0
-	+	81	27
-	+	80	0
-	+	81	11
-	+	76	0
-	+	75	0
-	+	73	0
-	+	74	12
-	+	73	26
-	+	74	22
-	+	83	21
-	+	76	28
-	+	88	39
-	+	89	0
-	+	88	38
-	+	89	8
-	+	81	17
-	+	77	41
-	+	88	19
-	+	54	0
-	+	58	0
-	+	58	36
-	+	49	34
-	+	54	0
-	+	48	0
-	+	50	0
-	+	51	1
-	+	53	0
-	+	52	1
-	+	53	0
-	+	56	0
-	+	56	8
-	+	57	0
-	+	35	35
-	+	34	0
-	+	39	0
-	+	44	0
-	+	48	0
-	+	47	11
-	+	82	19
-	+	81	21
-	+	88	0
-	+	86	0
-	+	88	0
-	+	39	36
-	+	39	57
-	+	87	0
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/EM/PPT/points/poinsts.txt
-	*	1671448088	0
-	"	1	8
-	^	1	9
-	.	1	8
-	+	2	0
-	+	4	0
-	+	1	8
-
-> ~/presentation_eco/list
-	*	1671426447	0
-	"	1	0
-	^	3	7
-	.	1	0
-	+	2	8
-	+	3	6
-	+	1	0
-
-> ~/.xinitrc
-	*	1671412337	0
-	"	29	0
-	.	29	0
-	+	19	0
-	+	20	0
-	+	23	0
-	+	24	0
-	+	23	0
-	+	13	0
-	+	16	0
-	+	22	9
-	+	40	0
-	+	37	0
-	+	24	10
-	+	25	0
-	+	29	12
-	+	35	4
-	+	32	41
-	+	33	0
-	+	31	20
-	+	33	17
-	+	34	8
-	+	15	10
-	+	25	0
-	+	29	13
-	+	29	0
-	+	29	13
-	+	31	0
-	+	32	0
-	+	33	0
-	+	34	0
-	+	35	0
-	+	29	13
-	+	29	0
-
-> ~/dl/kde-share/tmp
-	*	1671384331	0
-	"	1	0
-	.	2	0
-	+	2	0
-	+	1	0
-	+	2	0
-
-> /tmp/vimv.Siv
-	*	1671384037	0
-	"	1	0
-
-> /tmp/vimv.2en
-	*	1671382202	0
-	"	10	0
-	.	2	0
-	+	2	0
-
-> ~/presentation_eco/done/cmd
-	*	1671371727	0
-	"	9	22
-	^	9	23
-	.	9	22
-	+	3	0
-	+	5	0
-	+	1	0
-	+	4	0
-	+	12	0
-	+	13	0
-	+	13	19
-	+	14	59
-	+	9	22
-
-> ~/.script/Jpn-lec
-	*	1671363421	0
-	"	4	13
-	^	4	14
-	.	4	13
-	+	2	0
-	+	7	0
-	+	1	8
-	+	7	5
-	+	7	0
-	+	7	66
-	+	7	8
-	+	7	0
-	+	5	2
-	+	5	3
-	+	5	0
-	+	7	3
-	+	8	49
-	+	3	6
-	+	4	56
-	+	6	77
-	+	4	57
-	+	6	76
-	+	7	51
-	+	4	13
-
-> ~/tmp.cmd
-	*	1671359396	0
-	"	2	175
-	^	2	0
-	.	2	0
-	+	1	0
-	+	2	0
-
-> ~/pic/bg/jojo-1.png
-	*	1671287522	0
-	"	1	0
-
-> /tmp/zshZUHbac.zsh
-	*	1671286648	0
-	"	6	9
-	^	6	10
-	.	6	9
-	+	8	0
-	+	5	31
-	+	6	8
-	+	5	23
-	+	9	0
-	+	7	8
-	+	6	9
-
-> /tmp/zshi5DAs4.zsh
-	*	1671286504	0
-	"	4	9
-	^	4	10
-	.	4	9
-	+	1	17
-	+	2	2
-	+	3	14
-	+	4	3
-	+	5	8
-	+	4	9
-
-> /tmp/vimv.MZR
-	*	1671286181	0
-	"	7	11
-	^	7	12
-	.	7	12
-	+	6	39
-	+	7	12
-
-> ~/.zprofile
-	*	1671284308	0
-	"	1	0
-
-> ~/$HOME/.config/sxhkd/sxhkdrc
-	*	1671284108	0
-	"	1	0
-
-> ~/.config/.index
-	*	1671284086	0
-	"	21	0
-	^	23	2
-	.	2	0
-	+	4	0
-	+	23	0
-	+	25	3
-	+	24	13
-	+	17	1
-	+	18	0
-	+	17	1
-	+	23	0
-	+	1	0
-	+	2	0
-	+	21	24
-	+	10	38
-	+	23	2
-	+	18	0
-	+	23	0
-	+	23	1
-	+	23	0
-	+	22	0
-	+	23	1
-	+	2	19
-	+	2	0
-	k	1	0
-
-> ~/ ~/.config/sxhkd/sxhkdrc
-	*	1671283931	0
-	"	1	0
-
-> /tmp/vimv.ZtO
-	*	1671281446	0
-	"	6	3
-	^	6	4
-	.	6	3
-	+	8	0
-	+	6	3
-
-> /tmp/vimv.3xy
-	*	1671280472	0
-	"	4	15
-	^	4	16
-	.	4	15
-	+	4	15
-
-> ~/presentation_eco/4.pptx
-	*	1671280435	0
-	"	60	0
-	.	1	0
-	+	1	0
-
-> /tmp/vimv.W8b
-	*	1671279948	0
-	"	4	5
-	^	1	29
-	.	1	28
-	+	2	1
-	+	1	28
-
-> /tmp/vimv.PZR
-	*	1671215347	0
-	"	6	0
-	^	6	1
-	.	6	0
-	+	1	1
-	+	2	0
-	+	6	0
-
-> ~/tmp/help-r/tmp
-	*	1671215299	0
-	"	1	6
-	^	1	8
-	.	2	0
-	+	2	0
-
-> /tmp/zshTjgYJc.zsh
-	*	1671215031	0
-	"	1	105
-	^	1	106
-	.	2	0
-	+	2	0
-	+	1	135
-	+	2	0
-	+	1	66
-	+	1	105
-	+	1	18
-	+	2	0
-
-> /tmp/vimv.UBm
-	*	1671214811	0
-	"	7	1
-	^	7	2
-	.	7	0
-	+	10	1
-	+	11	1
-	+	8	0
-	+	11	0
-	+	12	1
-	+	9	1
-	+	7	0
-
-> /tmp/zshmg2jYU.zsh
-	*	1671214111	0
-	"	1	11
-	^	1	21
-	.	1	11
-	+	1	11
-
-> ~/Learnig/python/sybbi/numpy.py
-	*	1671211846	0
-	"	3	29
-	^	3	30
-	.	3	30
-	+	1	11
-	+	3	9
-	+	3	4
-	+	3	3
-	+	3	2
-	+	4	10
-	+	3	2
-	+	4	9
-	+	3	30
-
-> ~/Learnig/github/lol/.git/COMMIT_EDITMSG
-	*	1671211814	0
-	"	1	20
-	^	1	21
-	.	2	0
-	+	2	0
-
-> ~/Learnig/github/lol/jpanise/gole
-	*	1671211271	0
-	"	3	0
-	^	2	37
-	.	2	36
-	+	1	4
-	+	2	0
-	+	3	0
-	+	4	0
-	+	1	19
-	+	2	36
-
-> ~/Learnig/japanese/songs/æ‹è‰² by ã‚‚ã•ã‚’.txt
-	*	1671210128	0
-	"	3	0
-
-> ~/.script/compiler
-	*	1671209381	0
-	"	35	26
-	^	15	0
-	.	15	0
-	+	24	27
-	+	36	0
-	+	35	0
-	+	36	0
-	+	24	25
-	+	35	24
-	+	24	58
-	+	15	0
-
-> ~/.vimrc
-	*	1671209298	0
-	"	52	5
-	^	9	1
-	.	9	0
-	+	9	0
-
-> /tmp/vimv.1Qt
-	*	1671199693	0
-	"	1	0
-	^	6	0
-	.	1	0
-	+	1	0
-	+	2	0
-	+	6	0
-	+	7	0
-	+	5	0
-	+	4	0
-	+	2	0
-	+	1	0
-
-> ~/tmp/help-r/link
-	*	1671198893	0
-	"	3	0
-	^	2	7
-	.	3	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	2	79
-	+	1	78
-	+	2	0
-	+	2	79
-	+	2	0
-	+	11	4
-	+	10	4
-	+	8	4
-	+	10	0
-	+	8	0
-	+	6	0
-	+	8	0
-	+	6	0
-	+	4	4
-	+	9	79
-	+	6	0
-	+	8	0
-	+	2	4
-	+	4	0
-	+	6	0
-	+	8	0
-	+	4	0
-	+	2	0
-	+	7	0
-	+	2	0
-	+	5	0
-	+	1	0
-	+	3	0
-
-> ~/.script/blender-Multikey
-	*	1671026287	0
-	"	22	4
-	^	8	64
-	.	37	0
-	+	23	0
-	+	24	0
-	+	24	44
-	+	24	0
-	+	10	0
-	+	13	0
-	+	11	31
-	+	12	2
-	+	13	1
-	+	11	105
-	+	13	0
-	+	12	1
-	+	37	0
-
-> ~/.script/brightness
-	*	1671025593	0
-	"	8	74
-
-> ~/brightness
-	*	1671025573	0
-	"	1	0
-
-> ~/Doc/Education_related_DOCS/lena/previous_application.txt
-	*	1670939412	0
-	"	1	6
-	^	1	4
-	.	1	3
-	+	1	3
-
-> /tmp/vimv.ymX
-	*	1670936468	0
-	"	1	0
-	^	1	5
-	.	2	0
-	+	2	0
-
-> ~/.script/statusbar/sb-battry
-	*	1670935073	0
-	"	35	131
-	^	35	132
-	.	35	131
-	+	34	60
-	+	12	0
-	+	27	0
-	+	26	25
-	+	34	20
-	+	29	21
-	+	32	0
-	+	34	0
-	+	35	0
-	+	37	0
-	+	35	24
-	+	37	0
-	+	35	169
-	+	35	0
-	+	35	176
-	+	32	0
-	+	36	0
-	+	37	0
-	+	35	26
-	+	35	131
-
-> /etc/runit/2
-	*	1670869653	0
-	"	1	0
-
-> /tmp/zshvGb3Tv.zsh
-	*	1670861116	0
-	"	3	0
-	^	3	1
-	.	3	0
-	+	3	0
-
-> /tmp/zshuSJBE9.zsh
-	*	1670861105	0
-	"	3	0
-	^	3	0
-	.	3	0
-	+	2	0
-	+	3	0
-
-> ~/.script/bl
-	*	1670841945	0
-	"	34	2
-	^	34	3
-	.	34	2
-	+	13	0
-	+	10	0
-	+	22	0
-	+	23	75
-	+	6	21
-	+	34	2
-
-> ~/.script/wificonnect
-	*	1670841905	0
-	"	3	13
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/BE-2/ppt/sent-presentation
-	*	1670763023	0
-	"	38	5
-	^	43	29
-	.	43	28
-	+	32	31
-	+	37	0
-	+	42	0
-	+	36	0
-	+	37	31
-	+	38	0
-	+	39	0
-	+	34	0
-	+	1	57
-	+	44	0
-	+	38	3
-	+	39	0
-	+	40	0
-	+	41	0
-	+	40	0
-	+	33	0
-	+	35	0
-	+	34	0
-	+	46	20
-	+	47	19
-	+	47	0
-	+	48	14
-	+	49	15
-	+	50	24
-	+	49	24
-	+	48	22
-	+	44	0
-	+	39	0
-	+	34	0
-	+	1	57
-	+	1	0
-	+	1	57
-	+	1	10
-	+	2	0
-	+	1	10
-	+	3	0
-	+	32	0
-	+	4	0
-	+	11	0
-	+	13	0
-	+	12	18
-	+	20	0
-	+	13	0
-	+	18	0
-	+	14	0
-	+	13	39
-	+	18	39
-	+	14	0
-	+	13	0
-	+	15	0
-	+	47	0
-	+	44	0
-	+	32	0
-	+	13	40
-	+	21	0
-	+	25	0
-	+	20	0
-	+	19	0
-	+	21	27
-	+	22	25
-	+	18	24
-	+	17	23
-	+	16	24
-	+	15	34
-	+	14	30
-	+	13	1
-	+	15	0
-	+	20	0
-	+	14	0
-	+	13	2
-	+	14	3
-	+	15	3
-	+	17	0
-	+	21	5
-	+	22	0
-	+	15	0
-	+	13	3
-	+	20	3
-	+	31	0
-	+	27	17
-	+	26	0
-	+	28	0
-	+	31	0
-	+	30	15
-	+	29	0
-	+	28	0
-	+	5	0
-	+	7	0
-	+	9	47
-	+	11	0
-	+	9	78
-	+	6	0
-	+	43	28
-
-> ~/Learnig/SYBBI-Sem_IV/Assingment/BE-2/my_point/causes_of_inflation.md
-	*	1670761312	0
-	"	1	0
-	^	31	164
-	.	1	0
-	+	24	6
-	+	28	27
-	+	13	112
-	+	15	0
-	+	14	43
-	+	7	32
-	+	29	25
-	+	30	22
-	+	34	24
-	+	37	25
-	+	34	27
-	+	37	24
-	+	29	24
-	+	7	32
-	+	15	36
-	+	29	26
-	+	58	0
-	+	43	0
-	+	53	0
-	+	49	1
-	+	43	1
-	+	53	1
-	+	37	0
-	+	58	9
-	+	58	0
-	+	58	11
-	+	58	8
-	+	58	16
-	+	58	0
-	+	58	9
-	+	58	8
-	+	58	7
-	+	58	6
-	+	58	0
-	+	53	0
-	+	57	1
-	+	55	71
-	+	51	71
-	+	46	73
-	+	28	67
-	+	30	0
-	+	29	0
-	+	2	94
-	+	5	82
-	+	7	0
-	+	14	0
-	+	9	53
-	+	58	6
-	+	58	32
-	+	58	0
-	+	58	27
-	+	58	107
-	+	58	20
-	+	58	0
-	+	58	6
-	+	58	0
-	+	58	50
-	+	58	0
-	+	58	7
-	+	58	6
-	+	58	0
-	+	58	34
-	+	58	0
-	+	58	83
-	+	13	0
-	+	12	4
-	+	11	12
-	+	10	69
-	+	9	12
-	+	11	103
-	+	24	0
-	+	16	39
-	+	17	0
-	+	16	41
-	+	29	0
-	+	28	1
-	+	28	0
-	+	28	81
-	+	32	0
-	+	58	0
-	+	37	0
-	+	35	0
-	+	29	0
-	+	18	0
-	+	24	0
-	+	22	56
-	+	21	70
-	+	23	0
-	+	28	0
-	+	27	54
-	+	25	74
-	+	26	74
-	+	31	163
-	+	1	0
-
-> ~/.local/src/git/sent/config.h
-	*	1670757546	0
-	"	13	8
-	^	13	9
-	.	13	8
-	+	13	3
-	+	12	9
-	+	13	8
-
-> ~/Games/Genshin_Impact/mimax.md
-	*	1670608471	0
-	"	23	0
-	^	23	0
-	.	23	0
-	+	1	6
-	+	2	0
-	+	3	0
-	+	3	10
-	+	4	8
-	+	6	9
-	+	6	0
-	+	6	6
-	+	6	7
-	+	7	7
-	+	8	0
-	+	7	8
-	+	8	9
-	+	10	0
-	+	11	5
-	+	11	0
-	+	14	9
-	+	14	0
-	+	12	11
-	+	13	12
-	+	15	12
-	+	14	10
-	+	16	0
-	+	20	11
-	+	29	5
-	+	29	2
-	+	12	15
-	+	13	20
-	+	14	16
-	+	14	20
-	+	15	17
-	+	14	23
-	+	14	19
-	+	13	23
-	+	15	20
-	+	12	24
-	+	13	24
-	+	14	20
-	+	14	24
-	+	12	28
-	+	15	21
-	+	14	0
-	+	20	7
-	+	17	17
-	+	20	2
-	+	20	0
-	+	28	11
-	+	20	1
-	+	21	1
-	+	20	1
-	+	21	2
-	+	29	0
-	+	27	0
-	+	21	2
-	+	20	11
-	+	18	11
-	+	20	5
-	+	5	0
-	+	8	0
-	+	9	0
-	+	20	0
-	+	22	0
-	+	29	0
-	+	26	0
-	+	25	7
-	+	20	0
-	+	21	34
-	+	20	0
-	+	19	13
-	+	28	4
-	+	23	0
-
-> ~/Games/Genshin_Impact/TH.md
-	*	1670608412	0
-	"	1	0
-
-> ~/.script/statusbar/sb-internet
-	*	1670508094	0
-	"	10	19
-	.	9	0
-	+	10	1
-	+	11	0
-	+	9	0

@@ -7,8 +7,8 @@ xrandr --output eDP --gamma 0.8:0.8:0.8 &
 xrandr --auto
 sxhkd &
 compton -I 1 -D 3 -m 0.9 -G &
-wal -R ; setwal &
-pulseaudio -k ; pulseaudio &
+wal -R ; setwal&
+pulseaudio &
 dwmblocks &
 # MPD daemon start (if no other user instance exists)
 mpd & notify-send "mpd up" &
@@ -20,9 +20,8 @@ xmodmap -e 'keycode 66 = Escape' &
 #extra keys map
 xmodmap ~/.config/keybind/xmodmap-HP.conf &
 #calcurece
-$TERMINAL -e calcurse &
 #brightness
-echo "75" > "/sys/class/backlight/radeon_bl0/brightness"
+echo "75" > "/sys/class/backlight/radeon_bl0/brightness" &
 
 
 

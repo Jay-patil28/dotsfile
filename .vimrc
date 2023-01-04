@@ -58,6 +58,7 @@ map zJ zk
 map zK zr
 "incert map
 imap <F3> <C-x>s
+"micros
 
 ""my shit
 set showcmd
